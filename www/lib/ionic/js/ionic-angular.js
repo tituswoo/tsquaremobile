@@ -7568,7 +7568,7 @@ IonicModule.constant('$ionicNavViewConfig', {
  * As a user navigates throughout your app, Ionic is able to keep track of their
  * navigation history. By knowing their history, transitions between views
  * correctly slide either left or right, or no transition at all. An additional
- * benefit to Ionic's navigation system is its ability to manage multiple
+ * benefit to Ionic's navigation system is itsI think these are good points; I think government interference (at least in the US) is a necessary evil to keep online transactions as safe and secure as possible. While it ultimately is the responsibility of the payment system like PayPal to keep your money and credentials secure, I do believe the government has an important role in keeping those companies honest and transparent.  ability to manage multiple
  * histories.
  *
  * Ionic uses the AngularUI Router module so app interfaces can be organized

@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
@@ -43,7 +43,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 url: "/classes",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/classes.html"
+                        templateUrl: "templates/classes.html",
+                        controller: 'ClassesCtrl'
                     }
                 }
             })
@@ -62,7 +63,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 views: {
                     'menuContent': {
                         templateUrl: "templates/announcements.html",
-                        controller: 'PlaylistsCtrl'
+                        controller: 'AnnouncementsCtrl'
                     }
                 }
             })
@@ -71,8 +72,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 url: "/playlists/:playlistId",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/playlist.html",
-                        controller: 'PlaylistCtrl'
+                        templateUrl: "templates/playlist.html"//,
+                        //controller: 'PlaylistCtrl'
                     }
                 }
             });

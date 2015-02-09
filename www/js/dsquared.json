@@ -1,0 +1,482 @@
+[
+  {
+    "uuid": "gtc-4298-aabe-547e-86ee-3f7e41bb6c9e",
+    "title": "CS-1100-A",
+    "description": "",
+    "lastUpdate": "1423245038.02031",
+    "semester": {
+      "partOfYear": "SPR",
+      "year": 2015,
+      "id": 20
+    },
+    "isStale": true,
+    "hasAttachments": true,
+    "instructors": [],
+    "schedule": [],
+    "assignments": [
+      {
+        "modifiedDate": "1422902820",
+        "openDate": null,
+        "dueDate": "1423505100",
+        "hasAttachments": false,
+        "attachments": [],
+        "uuid": "gtc-4298-aabe-547e-86ee-3f7e41bb6c9e",
+        "postDate": "1422896400",
+        "title": "Journal 1",
+        "details": "Describe your experience at the Spring 2015 College of Computing Career Fair:-What was your strategy for attending? (For example: did you research companies, practice your elevator pitch, purchase a new suit...)-Describe which companies you visited and why. -Describe outcomes of your conversations with companies.-What was your overall experience like? Your journal entry should at least be between 150 and 200 words. Please attach as a PDF file. ",
+        "lastUpdate": "1423242357.86783",
+        "id": 3428
+      }
+    ],
+    "announcements": [
+      {
+        "author": "Ayzenberg, Stanley Roger",
+        "uuid": "2da7ef1c-92a6-4304-8de0-e5cebc41003a",
+        "postDate": "1422337349",
+        "title": "Quick addendum to the resume review announcement",
+        "details": "Hey guys, I\u0027ve been getting this a lot so just to clarify, even if you didn\u0027t turn in your resume, I\u0027ll still review it if you email it to me at sayzenberg@gatech.edu. You won\u0027t get credit for it, but I will give you feedback regardless, which will be helpful for preparing for the career fair.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nGood luck to all of you!",
+        "lastUpdate": "1422497327.96851",
+        "id": 7613
+      },
+      {
+        "author": "Ayzenberg, Stanley Roger",
+        "uuid": "f8520c15-3c8d-49da-a6fe-d1c4b6e6a1b0",
+        "postDate": "1422304218",
+        "title": "Resume grades released, read this for more info",
+        "details": "Hey all,\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nWe\u0027ve released your resume grades, so you can go view them, along with our feedback, in the Assignments section. Overall we saw a lot of good work, but also places for improvement. While we\u0027ve already graded everything, we still want you to have the best possible resumes for the career fair. So, if you want to revise your resume and then send it to me, I would be happy to look over it and provide feedback. This won\u0027t change your grade, but it might help you score that interview!\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nYou can send me your resumes at sayzenberg@gatech.edu. Also, if you want some more immediate feedback from industry professionals, please attend Resume Reboot today in the Klaus Atrium from 10 - 4. Good luck at the career fair!\u003Cbr\/\u003E",
+        "lastUpdate": "1422497327.98062",
+        "id": 7614
+      },
+      {
+        "author": "Rose, Ashley",
+        "uuid": "3611b110-9962-4670-a692-675217aa4bce",
+        "postDate": "1421984669",
+        "title": "Career Fair Information",
+        "details": "The CoC career fair is taking place next week, January 27-January 29. Here is the link to view a listing of companies that will be attending: http:\/\/www.cc.gatech.edu\/student-life\/career-development\/career-fair-attendees\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nDownload the GT Career Fair Plus mobile application for more in-depth company information, including positions available. Be sure to research companies of interest to you that you plan to speak with at the fair. \u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nWe will cover elevator pitches and general career fair tips in class next week. Your resumes should be returned to you by Monday. See you then!",
+        "lastUpdate": "1422497327.992",
+        "id": 7615
+      },
+      {
+        "author": "Raczynski, Katharine A",
+        "uuid": "84edc319-81e7-4ae0-9506-de4875c70407",
+        "postDate": "1421099704",
+        "title": "Bring Resume to Class Today!",
+        "details": "\u0026nbsp;This is just a friendly reminder that you need to not only upload your resume to Tsquare under \u0026quot;Assignments\u0026quot; but you will need to bring a hard copy with you to class today.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nKatie Raczynski",
+        "lastUpdate": "1422497328.00879",
+        "id": 7616
+      },
+      {
+        "author": "Rose, Ashley",
+        "uuid": "c94e2fdc-eff3-4615-93ab-9c70e2b29030",
+        "postDate": "1422920827",
+        "title": "Edited Assignment: Open Date for \u0027Journal 1\u0027",
+        "details": "Open date for assignment \u0027Journal 1\u0027 is Feb 2, 2015 12:00 pm.",
+        "lastUpdate": "1422926465.06176",
+        "id": 7703
+      }
+    ],
+    "id": 78
+  },
+  {
+    "uuid": "gtc-d657-c28a-5152-8a13-5fd6889f72cc",
+    "title": "CS-3312-JIA",
+    "description": "",
+    "lastUpdate": "1423245038.03089",
+    "semester": {
+      "partOfYear": "SPR",
+      "year": 2015,
+      "id": 20
+    },
+    "isStale": true,
+    "hasAttachments": false,
+    "instructors": [],
+    "schedule": [],
+    "assignments": [],
+    "announcements": [
+      {
+        "author": "Waters, Robert L Jr",
+        "uuid": "0b43a0b2-0e41-42ca-83d1-6e84dcc12925",
+        "postDate": "1421952654",
+        "title": "Updated Design Rubric",
+        "details": "I updated the detailed design rubric in Resources.Criteria.",
+        "lastUpdate": "1422497330.69485",
+        "id": 7617
+      },
+      {
+        "author": "Waters, Robert L Jr",
+        "uuid": "f7f7ec14-a7ed-4c4c-82f3-f54e562bad6a",
+        "postDate": "1421782783",
+        "title": "Venture Lab",
+        "details": "I was asked to send this to capstone students:\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Cdiv\u003E\u0026nbsp;\u003C\/div\u003E\r\n\u003Cdiv\u003E\r\n\u003Cdiv style=\u0022margin-top:14pt;margin-bottom:14pt;\u0022 \u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003EDear Students Teams,\u003C\/span\u003E\u003C\/font\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022margin-top:14pt;margin-bottom:14pt;\u0022 \u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003ELast fall, I attended the Capstone Expo and was amazed by the incredible work you do. At \u003C\/span\u003E\u003C\/font\u003E\u003Ca  href=\u0022https:\/\/ccmail.cc.gatech.edu\/OWA\/redir.aspx?C=Mrneld24okuKrh8850KOftZQD_tECNII-GVYxINwPBBIE5hfj2v0o1Z4U0vrBDvzajUdpffO7RM.\u0026amp;URL=http%3a%2f%2fventurelab.gatech.edu\u0022  target=\u0022_blank\u0022 \u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003EVentureLab\u003C\/span\u003E\u003C\/font\u003E\u003C\/a\u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003E, we serve the faculty, staff, and students at Georgia Tech who wish to  transform their research and ideas into startups. Our services are free  for the GA Tech community and we take no equity in your company. We  believe that some of your projects have potential for commercialization and would like to discuss those opportunities with  you. \u003C\/span\u003E\u003C\/font\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022margin-top:14pt;margin-bottom:14pt;\u0022 \u003E\u0026nbsp;\u003C\/div\u003E\r\n\u003Cdiv style=\u0022margin-top:14pt;margin-bottom:14pt;\u0022 \u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003ESign up for an \u003C\/span\u003E\u003C\/font\u003E\u003Ca  href=\u0022https:\/\/ccmail.cc.gatech.edu\/OWA\/redir.aspx?C=Mrneld24okuKrh8850KOftZQD_tECNII-GVYxINwPBBIE5hfj2v0o1Z4U0vrBDvzajUdpffO7RM.\u0026amp;URL=https%3a%2f%2fdocs.google.com%2fforms%2fd%2f1R23v_lELyHhLJKZKb8OJRbzepuc9N2wXLMCM308ROes%2fviewform\u0022  target=\u0022_blank\u0022 \u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003Einfo session here\u003C\/span\u003E\u003C\/font\u003E\u003C\/a\u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003E.\u003C\/span\u003E\u003C\/font\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022margin-top:14pt;margin-bottom:14pt;\u0022 \u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003E\u0026nbsp;\u003C\/span\u003E\u003C\/font\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022margin-top:14pt;margin-bottom:14pt;\u0022 \u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003EQuestions?\u003C\/span\u003E\u003C\/font\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022margin-top:14pt;margin-bottom:14pt;\u0022 \u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003EEmail \u003C\/span\u003E\u003C\/font\u003E\u003Ca  href=\u0022https:\/\/ccmail.cc.gatech.edu\/OWA\/redir.aspx?C=Mrneld24okuKrh8850KOftZQD_tECNII-GVYxINwPBBIE5hfj2v0o1Z4U0vrBDvzajUdpffO7RM.\u0026amp;URL=mailto%3aernesto.escobar%40venturelab.gatech.edu\u0022  target=\u0022_blank\u0022 \u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003EErnesto Escobar\u003C\/span\u003E\u003C\/font\u003E\u003C\/a\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022margin-top:14pt;margin-bottom:14pt;\u0022 \u003E\u003Ca  href=\u0022https:\/\/ccmail.cc.gatech.edu\/OWA\/redir.aspx?C=Mrneld24okuKrh8850KOftZQD_tECNII-GVYxINwPBBIE5hfj2v0o1Z4U0vrBDvzajUdpffO7RM.\u0026amp;URL=http%3a%2f%2fventurelab.gatech.edu\u0022  target=\u0022_blank\u0022 \u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003EVentureLab\u003C\/span\u003E\u003C\/font\u003E\u003C\/a\u003E\u003Cfont face=\u0022Avenir Next Regular\u0022  size=\u00224\u0022 \u003E\u003Cspan style=\u0022font-size:14pt;\u0022 \u003E at GA Tech\u003C\/span\u003E\u003C\/font\u003E\u003C\/div\u003E\r\n\u003C\/div\u003E",
+        "lastUpdate": "1422497330.72284",
+        "id": 7618
+      },
+      {
+        "author": "Waters, Robert L Jr",
+        "uuid": "729df2ba-977b-46cd-be50-4f52d38e60e4",
+        "postDate": "1421351168",
+        "title": "Pivotal Tracker ",
+        "details": "\u0026nbsp;A couple of teams added me with rw89 address.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nPlease check and only use my : \u0026nbsp;watersr@cc.gatech.edu address.",
+        "lastUpdate": "1422497330.7399",
+        "id": 7619
+      },
+      {
+        "author": "Waters, Robert L Jr",
+        "uuid": "74b6e8ec-b982-4f77-b913-8006c7529ef4",
+        "postDate": "1421273271",
+        "title": "Email me team info",
+        "details": "\u0026nbsp;I got the team info from the following teams: \u0026nbsp;56, 58, 61, 62, 81, 82, 88\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nif you don\u0027t see your team number, then send me an email with your team number and the members of your team this semester.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E",
+        "lastUpdate": "1422497330.76486",
+        "id": 7620
+      },
+      {
+        "author": "Waters, Robert L Jr",
+        "uuid": "f5b6eb8a-0892-4115-871c-e3dcd7ed4c9b",
+        "postDate": "1423248535",
+        "title": "Sprint 1 Reviews",
+        "details": "Next week, we will be meeting for our Sprint 1 reviews.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nEach team has 25 minutes, and you only need to come for your 25 minute time slot.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nWe would like to see the following:\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\na.\u0026nbsp; Demo of Sprint 1 functionality\u003Cbr\/\u003E\r\nb.\u0026nbsp; Comparison of planned vs actual functionality based on SOW schedule presented last semester\u003Cbr\/\u003E\r\nc.\u0026nbsp; Review of design grade \/ project management grade questions with Bob and Olga",
+        "lastUpdate": "1423241112.61291",
+        "id": 7789
+      }
+    ],
+    "id": 79
+  },
+  {
+    "uuid": "gtc-a11c-c3be-5a6d-a182-8e26fd24e48c",
+    "title": "CS-4001-B",
+    "description": "",
+    "lastUpdate": "1423245038.04152",
+    "semester": {
+      "partOfYear": "SPR",
+      "year": 2015,
+      "id": 20
+    },
+    "isStale": true,
+    "hasAttachments": true,
+    "instructors": [],
+    "schedule": [],
+    "assignments": [
+      {
+        "modifiedDate": "1423155600",
+        "openDate": null,
+        "dueDate": "1423749600",
+        "hasAttachments": true,
+        "attachments": [],
+        "uuid": "gtc-a11c-c3be-5a6d-a182-8e26fd24e48c",
+        "postDate": "1423155600",
+        "title": "Term Paper References",
+        "details": "\u00a0Term Paper References",
+        "lastUpdate": "1423501769.89276",
+        "id": 3429
+      }
+    ],
+    "announcements": [
+      {
+        "author": "Li, Muzi",
+        "uuid": "06e83d85-0cb4-48b7-a0e6-51f9303ac8e1",
+        "postDate": "1421111245",
+        "title": "CS4001 TA Office Hours",
+        "details": "Hi All,\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nMy TA office hours will be on Thursday from 1:00pm to 3:00pm at TSRB 304.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nFYI, HW1 is due tomorrow 9:00am.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nMickey",
+        "lastUpdate": "1422497333.25122",
+        "id": 7621
+      },
+      {
+        "author": "Apostolico, Alberto",
+        "uuid": "ae2c859c-53ec-4778-99f4-6a7bc954fe13",
+        "postDate": "1422743073",
+        "title": "Feb 3 ",
+        "details": "\u0026nbsp;A gentle reminder that the class of February 3 will be entirely devoted to discussion of Ch. 3 (Network Communications)\u0026nbsp;\u003Cbr\/\u003E\r\nand 4 (Intellectual Property). Come prepared: \u003Cbr\/\u003E\r\n-take notes as you go over the textbook\u003Cbr\/\u003E\r\n-browse the web, newspapers and other media looking for current instances\u003Cbr\/\u003E\r\n-bring your notes to class, and of course a pen \u0026nbsp;\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E",
+        "lastUpdate": "1422926469.32965",
+        "id": 7704
+      },
+      {
+        "author": "Li, Muzi",
+        "uuid": "61c477b3-8d20-427d-b0bf-1006e08d02cb",
+        "postDate": "1423171461",
+        "title": "Presentation - Group formation",
+        "details": "Hi all,\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nIt\u0027s about the time to have you formed into groups and start working on your group presentation.\u003Cbr\/\u003E\r\nPlease start thinking about potential topics that you would like to work on and present to the class by the end of the semester and be prepared to share others. You will be asked to form into groups of four in class next Tuesday based on common interests.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nThanks.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nBest,\u003Cbr\/\u003E\r\nMickey\u003Cbr\/\u003E",
+        "lastUpdate": "1423158086.43474",
+        "id": 7781
+      }
+    ],
+    "id": 80
+  },
+  {
+    "uuid": "gtc-132b-44a1-589a-8a08-57b9a3030efc",
+    "title": "CS-4496-A",
+    "description": "",
+    "lastUpdate": "1423245038.09447",
+    "semester": {
+      "partOfYear": "SPR",
+      "year": 2015,
+      "id": 20
+    },
+    "isStale": true,
+    "hasAttachments": false,
+    "instructors": [],
+    "schedule": [],
+    "assignments": [
+      {
+        "modifiedDate": "1422296154",
+        "openDate": null,
+        "dueDate": "1422648000",
+        "hasAttachments": false,
+        "attachments": [],
+        "uuid": "eec03cd9-548b-4c9a-bfad-cc9323b452da",
+        "postDate": "1422283749",
+        "title": "Project 1",
+        "details": "\u003Cspan class=\u0022style_1\u0022 \u003EPlease save your scripts in separate .mel files.\u0026nbsp; A zip is fine but not necessary.\u003Cbr\/\u003E\nIf you implemented any code for the extra credits, please attach a short description of what you have done and how to test the code, either in a text file or as a note.\u003C\/span\u003E",
+        "lastUpdate": "1423501783.70899",
+        "id": 3430
+      }
+    ],
+    "announcements": [
+      {
+        "author": "Turner, John Milton",
+        "uuid": "fc8fdba3-4ed9-4836-9fca-c5b75b2f060b",
+        "postDate": "1422296154",
+        "title": "Edited Assignment: Open Date for \u0027Project 1\u0027",
+        "details": "Updated open date for assignment \u0027Project 1\u0027 is Jan 26, 2015 11:55 pm.",
+        "lastUpdate": "1422497339.53692",
+        "id": 7622
+      }
+    ],
+    "id": 81
+  },
+  {
+    "uuid": "e0d52878-98fa-4300-a8c3-9e8b75257020",
+    "title": "GIT MAD",
+    "description": "",
+    "lastUpdate": "1423459395.73533",
+    "semester": {
+      "partOfYear": "SUM",
+      "year": 2010,
+      "id": 22
+    },
+    "isStale": true,
+    "hasAttachments": false,
+    "instructors": [],
+    "schedule": [],
+    "assignments": [],
+    "announcements": [
+      {
+        "author": "Greenhalgh, David Robert",
+        "uuid": "16753463-72eb-470b-b6b0-791c17555870",
+        "postDate": "1397516801",
+        "title": "GIT MAD officer elections tonight!",
+        "details": "\u003Cspan style=\u0022font-family: \u0027Trebuchet MS\u0027, Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 13.333333969116211px;\u0022 \u003EHey all,\u003Cbr\/\u003E\r\n\u003C\/span\u003E\u003Cbr\/\u003E\r\nTonight is the last GIT MAD meeting of the semester, and it\u0027s an important one - elections. We\u0027ll be looking forward to the future of the club and those who lead it with an open discussion on what you\u0027d like to see from GIT MAD in the future.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Cspan style=\u0022font-family: \u0027Trebuchet MS\u0027, Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 13.333333969116211px;\u0022 \u003EUse the following link to nominate people for GIT MAD leadership:\u0026nbsp;\u003C\/span\u003E\u003Ca  href=\u0022http:\/\/goo.gl\/3fmcug\u0022  target=\u0022_blank\u0022 \u003Egoo.gl\/3fmcug\u003C\/a\u003E\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Cspan style=\u0022font-family: \u0027Trebuchet MS\u0027, Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 13.333333969116211px;\u0022 \u003ENominate anyone that you feel would be good for the role. Feel free to nominate yourself, and you can nominate multiple people for multiple positions. We\u0027ll be accepting nominations for the rest of the day. \u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nWe\u0027ll see you there!\u003C\/span\u003E",
+        "lastUpdate": "1422463666.47897",
+        "id": 7599
+      },
+      {
+        "author": "Greenhalgh, David Robert",
+        "uuid": "452fc1df-48a5-4bed-a006-4855ca2f1a26",
+        "postDate": "1397262223",
+        "title": "App-a-thon details",
+        "details": "Hey all,\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nWe\u0027re a few hours away from the start of the App-a-thon, so here\u0027s a few more details about the event.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nWe\u0027ll start at 6:30pm in Klaus 1447 and 1456, and you\u0027ll have from then until 10am to build a mobile app or a web app. You app could be anything! The only rule is that you can\u0027t have brought any previously written code in.\u0026nbsp;\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nYou can group up in teams of up to three people, or fly solo. If you\u0027d like to RSVP your team, you can use \u003Ca  href=\u0022https:\/\/docs.google.com\/forms\/d\/1vC3LBqrKFyHZeqUmDj-XWu9LEx6DkiZABxyq7NGttto\/viewform\u0022  target=\u0022_blank\u0022 \u003Ethis form to do so.\u003C\/a\u003E\u0026nbsp;If you\u0027re looking for a team, you can use \u003Ca  href=\u0022https:\/\/docs.google.com\/forms\/d\/1at1pztUCVoCIaIj6_6b7jJBTYbWTX8RqGfjVFdwEdyc\/viewform\u0022  target=\u0022_blank\u0022 \u003Ethis form\u003C\/a\u003E and we\u0027ll help match you with a team. Even if you don\u0027t have an idea or aren\u0027t confident in your abilities, come on out anyway - you\u0027ll be surprised what you can accomplish.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nWe\u0027ll have Moe\u0027s for dinner, Domino\u0027s pizza at midnight, and Chick-fil-a for breakfast. We\u0027ll also have snacks and drinks all night.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nWe have 5 prize categories where we\u0027ll be giving away Surfaces, iPad Minis, Nexus phones, and more. Plus, we\u0027ll raffle away an absurd amount of books and devices.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nI look forward to seeing you there!\u003Cbr\/\u003E",
+        "lastUpdate": "1422463666.53776",
+        "id": 7600
+      },
+      {
+        "author": "Greenhalgh, David Robert",
+        "uuid": "d49921f9-d47a-4056-927a-430b53654c71",
+        "postDate": "1397158560",
+        "title": "Come on out to the App-a-thon this Friday!",
+        "details": "\u003Cspan style=\u0022font-size: medium;\u0022 \u003E\u003Cspan style=\u0022color: rgb(34, 34, 34); font-family: arial, sans-serif;\u0022 \u003EHey all,\u003C\/span\u003E \u003C\/span\u003E\r\n\u003Cdiv\u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003E\u003Cbr\/\u003E\r\n\u003C\/span\u003E\r\n\u003Cdiv\u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003E\u003Cspan style=\u0022font-family: Arial;\u0022 \u003EThe App-a-thon is upon us!\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003C\/span\u003E\u003C\/span\u003E\u003C\/div\u003E\r\n\u003Cdiv\u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003E\u003Cspan style=\u0022font-family: Arial;\u0022 \u003ETomorrow Friday April 11th from 6:30pm till Saturday April 12th at\u003C\/span\u003E\u003C\/span\u003E\u003C\/div\u003E\r\n\u003Cdiv\u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003E\u003Cspan style=\u0022font-family: Arial;\u0022 \u003E10:30am, come flex your mobile and web app development muscles. You\u0027ll have the chance to win some great tablets, smartwatches, phones, and lots of other prizes. We\u0027ll also be holding hourly raffle prizes, and the raffle prize list this year is huge.\u0026nbsp;\u003C\/span\u003E\u003C\/span\u003E\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n\u003Cdiv style=\u0022color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13px;\u0022 \u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003E \u0026nbsp;\u003C\/span\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13px;\u0022 \u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003EIf you want to go ahead and sign up early, \u003C\/span\u003E\u003Ca  href=\u0022https:\/\/docs.google.com\/forms\/d\/1vC3LBqrKFyHZeqUmDj-XWu9LEx6DkiZABxyq7NGttto\/viewform\u0022  target=\u0022_blank\u0022 \u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003Euse this form\u003C\/span\u003E\u003C\/a\u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003E to register your team\u003C\/span\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13px;\u0022 \u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003Eof up to 3 members. If you do not have a team yet, \u003C\/span\u003E\u003Ca  href=\u0022https:\/\/docs.google.com\/forms\/d\/1at1pztUCVoCIaIj6_6b7jJBTYbWTX8RqGfjVFdwEdyc\/viewform\u0022  target=\u0022_blank\u0022 \u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003Eyou can use this form\u003C\/span\u003E\u003C\/a\u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003E,\u003C\/span\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13px;\u0022 \u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003Ewhere you can fill out your skills and mention wether or not you have any project ideas to\u0026nbsp;\u003C\/span\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13px;\u0022 \u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003Econtribute. This way, people looking for teams before\/during the App-a-thon that are looking\u003C\/span\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13px;\u0022 \u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003Efor more team members can look off the free agent list and contact you.\u003C\/span\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13px;\u0022 \u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003E\u0026nbsp;\u003C\/span\u003E\u003C\/div\u003E\r\n\u003Cdiv style=\u0022color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13px;\u0022 \u003E\u003Cspan style=\u0022font-size: medium;\u0022 \u003EWe look forward to seeing everyone and the really incredible apps everyone comes up with.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nSee you there!\u003C\/span\u003E\u003C\/div\u003E",
+        "lastUpdate": "1422463666.54847",
+        "id": 7601
+      },
+      {
+        "author": "Greenhalgh, David Robert",
+        "uuid": "4666f84d-772d-4b2d-9ef2-9d441e4514ad",
+        "postDate": "1397008171",
+        "title": "GIT MAD 2014-2015 officer nominations",
+        "details": "Hey all,\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nThis upcoming Monday, GIT MAD will be holding officer elections for the 2014-2015 school year, and you can be involved in the process.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nUse the following link to nominate:\u0026nbsp;\u003Ca  href=\u0022http:\/\/goo.gl\/3fmcug\u0022  target=\u0022_blank\u0022 \u003Egoo.gl\/3fmcug\u003C\/a\u003E\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nNominate anyone that you feel would be good for the role. Feel free to nominate yourself, and you can nominate multiple people for multiple positions. We\u0027ll be accepting nominations from now until Monday, 4\/14.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nBeing a GIT MAD officer has been a great experience, and I highly encourage anyone who\u0027s interested to applying to do so. Any of the present officers would be happy to answer questions that you may have.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nBest,\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nDavid\u003Cbr\/\u003E",
+        "lastUpdate": "1422463666.5599",
+        "id": 7602
+      },
+      {
+        "author": "Greenhalgh, David Robert",
+        "uuid": "94d8fa28-8ff7-4051-9685-0821c729e93f",
+        "postDate": "1393897980",
+        "title": "GIT MAD meeting tonight!",
+        "details": "Hey all,\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nTonight at 6:30pm in CoC 017, we\u0027ll be talking about publishing your applications - a topic we haven\u0027t touched on before. We\u0027ll touch on the publishing process, localization, building your APK, and more.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nFood and drinks will be served. See you tonight!\u003Cbr\/\u003E",
+        "lastUpdate": "1422463666.61851",
+        "id": 7603
+      }
+    ],
+    "id": 73
+  },
+  {
+    "uuid": "gtc-a805-a305-579e-8515-f3749087d617",
+    "title": "LMC-3262-N",
+    "description": "",
+    "lastUpdate": "1423245038.12499",
+    "semester": {
+      "partOfYear": "SPR",
+      "year": 2015,
+      "id": 20
+    },
+    "isStale": true,
+    "hasAttachments": false,
+    "instructors": [],
+    "schedule": [],
+    "assignments": [
+      {
+        "modifiedDate": "1423427271",
+        "openDate": null,
+        "dueDate": "1425549300",
+        "hasAttachments": false,
+        "attachments": [],
+        "uuid": "5e073530-03b9-40dd-a379-f30832dd32a8",
+        "postDate": "1420418492",
+        "title": "Group Project Proposal",
+        "details": "\u003Cdiv class=\u0022textPanel\u0022 \u003E\n\u003Cdiv class=\u0022textPanel\u0022 \u003E\n\u003Cdiv class=\u0022textPanel\u0022 \u003E\n\u003Cdiv\u003EOne member of your group should submit the project proposal as an  attached document (.doc, .docx, or .rtf--NO .PDFs, please) to T-Square  by the deadline. Although you are welcome to organize your document by  addressing each of the numbered items below, you must address them in  full sentences. The document must include the following:\u003Cbr\/\u003E\n\u0026nbsp;\u003C\/div\u003E\n\u003Col start=\u00221\u0022  style=\u0022margin-top: 0in;\u0022  type=\u00221\u0022 \u003E\n    \u003Cli\u003EThe \u003Cb\u003Enames\u003C\/b\u003E      of the people in your group (and the name of your group, if it has one).\u003C\/li\u003E\n    \u003Cli\u003EThe \u003Cb\u003Eworking      title\u003C\/b\u003E of your project. This should be      specific, not generic (in other      words, not \u0026quot;Group Project on Heavy Metal\u0026quot;) and should      convey a sense of the envisioned      scope of the project and the approach you      plan to take. In other   words, it should tell me something about the project in addition to its   topic. The    working title can be changed later.\u003C\/li\u003E\n    \u003Cli\u003E\u003Cb\u003EA      description of the \u0026quot;deliverables\u0026quot; the project will entail.\u003C\/b\u003E           Remember: it can take the form of a traditional written     assignment  (for      example, a long paper with sections or chapters     written by  different group      members), a website or other  multimedia    project, a  video, an audio      documentary, any  combination of  these   things, or  possibly other things you      may  have in mind. You   should  be very  clear on just what the concrete       products of this   project  will be,  how many there will be, etc.\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cdiv style=\u0022margin-left: 40px;\u0022 \u003EPlease note that whatever form your      project takes, you are obligated to make clear what research you did for      it, what sources you used, and what you took from each source. This    is   easily done in a paper via footnotes or endnotes, but may take   some    creativity in other projects. Please indicate how you will   address  this   issue.\u003C\/div\u003E\n\u003Cdiv\u003E\u0026nbsp;\u003C\/div\u003E\n\u003Cdiv style=\u0022margin-left: 40px;\u0022 \u003EYou do not have to list the      presentation your group will make during the last week of the semester      as a deliverable unless the presentation will be the primary form of      your project (i.e., a performance). If so, you need to explain  clearly   and in detail what will   happen during the presentation and  what   tangible materials you will   convey afterward (e.g., a script, a  record   of the research you did and   how you used it, etc.).\u003C\/div\u003E\n\u003Col start=\u00224\u0022  style=\u0022margin-top: 0in;\u0022  type=\u00221\u0022 \u003E\n    \u003Cli\u003E\u003Cb\u003EA      summary of the project\u003C\/b\u003E, including the scope of the      project (what      specifically you expect to cover), the  approaches     you will be taking to the      material, what questions  you are  trying    to answer through the project,      what it will  contribute to  the    course, and anything else you can think of      to  give me a  clear and    concrete sense of what I will be getting.  Please include  some specifics, such as artists and even songs you plan  to address. This  may      require some    preliminary research.\u003C\/li\u003E\n    \u003Cli\u003E\u003Cb\u003EA      summary of the division of labor within the group\u003C\/b\u003E:      what each group      member has agreed to contribute. Please note:    the   division of labor is      clearly dependent on the form of the     project,  and is entirely up to you.      However, the proposal must     state what  each person will be doing, not how      much of the work     each person  will contribute.\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cdiv\u003E\u003Cu\u003ERemember\u003C\/u\u003E: this is truly a \u003Ci\u003Eproposal\u003C\/i\u003E, which means that I      may accept or reject it, accept it with modifications, etc. If  there     are significant issues with the original proposal, I reserve  the  right    to ask you (as a group) to revise it or redo it.\u003Cbr\/\u003E\n\u0026nbsp;\u003C\/div\u003E\n\u003Cdiv\u003E\u003Cu\u003EA few other things\u003C\/u\u003E:\u003C\/div\u003E\n\u003Cdiv\u003E\u0026nbsp;\u003C\/div\u003E\n\u003Cul\u003E\n    \u003Cli\u003ERemember that this is a course in Performance Studies. All     projects  must focus on and highlight the performance dimension of the     topic. For example, just talking about songs and their thematic  content  will not be enough. This  should be clear from the working  title and  the description   of the  project.\u003C\/li\u003E\n    \u003Cli\u003EIt is      crucial that both your topic and proposal be as \u003Ci\u003Especific \u003C\/i\u003Eas      possible.\u003C\/li\u003E\n    \u003Cli\u003EI am      more than happy to help you with this project at any      stage, including the      proposal stage. As you get to work on the   project, I will be glad      to meet with a group  or its     representatives to talk with you about your      progress,  give you     ideas or suggestions, etc.\u0026nbsp;\u003C\/li\u003E\n    \u003Cli\u003E\u0026nbsp;I am not willing, however, to intervene      in a group\u0027s      internal workings. Do not come to me with interpersonal      issues.      Whatever the problems may be, work them out among yourselves.           Remember that every member of the group will ultimately receive the same           grade for this proposal and all other aspects of the project,      including      the in-class presentation of the project during the   last    week of the term,      and all deliverables.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cdiv\u003EIf you have any questions about this proposal or the group project assignment, just ask.\u003C\/div\u003E\n\u003C\/div\u003E\n\u003C\/div\u003E\n\u003C\/div\u003E",
+        "lastUpdate": "1423501785.36518",
+        "id": 3431
+      },
+      {
+        "modifiedDate": "1420418691",
+        "openDate": null,
+        "dueDate": "1429602900",
+        "hasAttachments": false,
+        "attachments": [],
+        "uuid": "18a03eed-6c20-4fcb-be54-f5fb9ee3e4f8",
+        "postDate": "1420418691",
+        "title": "Group Project",
+        "details": "Please see syllabus for details.",
+        "lastUpdate": "1423501785.61064",
+        "id": 3432
+      },
+      {
+        "modifiedDate": "1420418770",
+        "openDate": null,
+        "dueDate": "1430290500",
+        "hasAttachments": false,
+        "attachments": [],
+        "uuid": "1947096a-be15-44d2-bebb-f2b01ce5e39f",
+        "postDate": "1420418770",
+        "title": "Individual Projects",
+        "details": "Please see syllabus for details.",
+        "lastUpdate": "1423501786.52598",
+        "id": 3433
+      },
+      {
+        "modifiedDate": "1420418366",
+        "openDate": null,
+        "dueDate": "1424388300",
+        "hasAttachments": false,
+        "attachments": [],
+        "uuid": "0c66fb59-e9a0-4860-96ab-f360cf8df44c",
+        "postDate": "1420418365",
+        "title": "First Exam",
+        "details": "Please see syllabus for details.",
+        "lastUpdate": "1423501787.09446",
+        "id": 3434
+      },
+      {
+        "modifiedDate": "1420418598",
+        "openDate": null,
+        "dueDate": "1429219500",
+        "hasAttachments": false,
+        "attachments": [],
+        "uuid": "0fd13a5b-f41a-4c47-9d0b-2fa70a47e93f",
+        "postDate": "1420418598",
+        "title": "Second Exam",
+        "details": "Please see syllabus for details.",
+        "lastUpdate": "1423501787.55669",
+        "id": 3435
+      }
+    ],
+    "announcements": [
+      {
+        "author": "Auslander, Philip",
+        "uuid": "b2b847ab-06ec-46b9-946e-ee1c7cf3be34",
+        "postDate": "1420675758",
+        "title": "For 1\/8",
+        "details": "\u003Cp\u003E\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022http:\/\/improveverywhere.com\/2008\/01\/31\/frozen-grand-central\/\u0022  target=\u0022_blank\u0022 \u003EFrozen Grand Central\u003C\/a\u003E\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022http:\/\/www.youtube.com\/watch?v=QuESMuEUSAk\u0022  target=\u0022_blank\u0022 \u003EJoshua Bell\u003C\/a\u003E\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022http:\/\/www.youtube.com\/watch?v=aaSC7qVRL0w\u0022  target=\u0022_blank\u0022 \u003EActors Red Yelp #2\u003C\/a\u003E\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022http:\/\/www.youtube.com\/watch?v=awBwFiaA5Dc\u0022  target=\u0022_blank\u0022 \u003EActors Read Yelp #7\u003C\/a\u003E\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022http:\/\/www.youtube.com\/watch?v=3O1sk3jA2Lk\u0022  target=\u0022_blank\u0022 \u003EActors Read Yelp #6\u003C\/a\u003E\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022http:\/\/www.youtube.com\/watch?v=F8ZZ-u_rSTE\u0022  target=\u0022_blank\u0022 \u003EInvisible Theater Example\u003C\/a\u003E\u003Cbr\/\u003E\r\n\u0026quot;Invisible Theater\u0026quot; is a concept created by the globally influential   Brazilian theater maker Augusto Boal (1931 - 2009) as one of the means   he developed to create performances he hoped would spur social change or   at least dialogue around social issues.\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022http:\/\/vimeo.com\/33241706\u0022  target=\u0022_blank\u0022 \u003EAndy Kaufman \u0026quot;Mighty Mouse\u0026quot; Performance, SNL1975\u003C\/a\u003E\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022https:\/\/www.youtube.com\/watch?v=JVnlqvlE85A\u0022  target=\u0022_blank\u0022 \u003E\u003Cbr\/\u003E\r\nMighty Mouse at Talent Show\u003C\/a\u003E\u003C\/p\u003E",
+        "lastUpdate": "1422569729.91263",
+        "id": 7636
+      },
+      {
+        "author": "Auslander, Philip",
+        "uuid": "820a6942-6911-4f4a-8fa1-d9a09cc4e74d",
+        "postDate": "1420505885",
+        "title": "Jacques Bono",
+        "details": "\u003Cp\u003E\u003Ca  href=\u0022http:\/\/www.youtube.com\/watch?v=rtmsyMxsEdU\u0026amp;feature=related\u0022  target=\u0022_blank\u0022 \u003EClassical Jacques\u003C\/a\u003E\u003C\/p\u003E\r\n\u003Cp\u003E\u003Ca  href=\u0022http:\/\/www.youtube.com\/watch?v=CwfTO-ymKgw\u0026amp;feature=related\u0022  target=\u0022_blank\u0022 \u003ERock Jacques\u003C\/a\u003E\u003C\/p\u003E",
+        "lastUpdate": "1422569729.92438",
+        "id": 7637
+      },
+      {
+        "author": "Auslander, Philip",
+        "uuid": "4b954658-3bdb-4710-a77f-68a4a0b65c8b",
+        "postDate": "1422307377",
+        "title": "For 1\/27: Miles Davis and John Coltrane",
+        "details": "\u003Ca  href=\u0022https:\/\/www.youtube.com\/watch?v=zqNTltOGh5c\u0022  target=\u0022_blank\u0022 \u003EMiles Davis, \u0026quot;So What\u0026quot; (1959) w\/ John Coltrane\u003C\/a\u003E\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022https:\/\/www.youtube.com\/watch?v=9OuD9VqpgNc\u0022  target=\u0022_blank\u0022 \u003E\u003Cbr\/\u003E\r\nJohn Coltrane, \u0026quot;Naima\u0026quot; (1965)\u003C\/a\u003E",
+        "lastUpdate": "1422569729.86319",
+        "id": 7634
+      },
+      {
+        "author": "Auslander, Philip",
+        "uuid": "5f305de9-a7a5-402a-94a6-44b8269858f0",
+        "postDate": "1421093475",
+        "title": "For 1\/13",
+        "details": "\u003Cb\u003EMusic as Frame\u003C\/b\u003E\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022http:\/\/www.sheetmusicplus.com\/title\/4-33-sheet-music\/1008430?ac=1\u0026amp;aff_id=69435\u0022  target=\u0022_blank\u0022 \u003EJohn Cage, \u003Ci\u003E4\u0027 33\u0026quot;\u003C\/i\u003E (1952)\u003C\/a\u003E\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022https:\/\/www.youtube.com\/watch?v=TStutMsLX2s\u0022  target=\u0022_blank\u0022 \u003EEdgard Varese, \u003Ci\u003EIonisation\u003C\/i\u003E (1931)\u003C\/a\u003E\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Cb\u003E\u003Cbr\/\u003E\r\nGenre\u003Cbr\/\u003E\r\n\u003C\/b\u003E\r\n\u003Cp\u003EHere are a number of visualizations of different music genres and their relationships:\u003C\/p\u003E\r\n\u003Cp\u003E\u003Ca  href=\u0022http:\/\/dj-glass.deviantart.com\/art\/Periodic-Table-of-Music-Genres-12372231\u0022  target=\u0022_blank\u0022 \u003Edj-glass.deviantart.com\/art\/Periodic-Table-of-Music-Genres-12372231\u003C\/a\u003E\u003C\/p\u003E\r\n\u003Cp\u003E\u003Ca  href=\u0022http:\/\/www.wardshelley.com\/paintings\/pages\/fullpics\/rockgenres-v2%20copy.jpg\u0022  target=\u0022_blank\u0022 \u003Ewww.wardshelley.com\/paintings\/pages\/fullpics\/rockgenres-v2%20copy.jpg\u003C\/a\u003E\u003C\/p\u003E\r\n\u003Cp\u003EThis one is\u0026nbsp; probably my current favorite: \u003Ca  href=\u0022http:\/\/www.free-range.org.uk\/images\/images\/51195.jpg\u0022  target=\u0022_blank\u0022 \u003EBrad Ellacott\u003C\/a\u003E\u003C\/p\u003E\r\n\u003Cp\u003EThis is the All Music Guide\u0027s list of major popular music genres. If     you click on any one of them, you\u0027ll get to a list of its subgenres:\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022http:\/\/www.allmusic.com\/cg\/amg.dll?p=amg\u0026amp;sql=73:p\u0022  target=\u0022_blank\u0022 \u003Ewww.allmusic.com\/cg\/amg.dll\u003C\/a\u003E\u003C\/p\u003E",
+        "lastUpdate": "1422569729.89589",
+        "id": 7635
+      },
+      {
+        "author": "Auslander, Philip",
+        "uuid": "91c5d0c0-aac9-4d14-9105-f40a7479430a",
+        "postDate": "1423128077",
+        "title": "For 2\/5",
+        "details": "\u0026nbsp;\u003Cimg alt=\u0022The Boss\u0022  class=\u0022alignleft size-full wp-image-1689\u0022  height=\u0022441\u0022  src=\u0022http:\/\/www.liketotally80s.com\/wp-content\/uploads\/2014\/06\/springsteen-no-number-one-2.jpeg\u0022  style=\u0022margin-top: 7px;\u0022  width=\u0022331\u0022 \/\u003E\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Cimg alt=\u0022\u0022  height=\u0022421\u0022  id=\u0022irc_mi\u0022  src=\u0022http:\/\/houstonsymphonyblog.org\/wp-content\/uploads\/2013\/01\/Symphony_Sections082.jpg\u0022  style=\u0022margin-top: 0px;\u0022  width=\u0022632\u0022 \/\u003E\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\n\u003Ca  href=\u0022https:\/\/www.youtube.com\/watch?v=ASitcSAk330\u0022  target=\u0022_blank\u0022 \u003EDavid Bowie, \u0026quot;The Width of A Circle\u0026quot; (1973)\u003C\/a\u003E\u003Cbr\/\u003E",
+        "lastUpdate": "1423242354.21252",
+        "id": 7812
+      }
+    ],
+    "id": 82
+  },
+  {
+    "uuid": "gtc-2548-c62a-548d-81d8-ef3c574e8b05",
+    "title": "LMC-3431-JIA",
+    "description": "",
+    "lastUpdate": "1423459395.75389",
+    "semester": {
+      "partOfYear": "SPR",
+      "year": 2015,
+      "id": 20
+    },
+    "isStale": true,
+    "hasAttachments": true,
+    "instructors": [],
+    "schedule": [],
+    "assignments": [
+      {
+        "modifiedDate": "1421963280",
+        "openDate": null,
+        "dueDate": "1422680100",
+        "hasAttachments": true,
+        "attachments": [],
+        "uuid": "gtc-2548-c62a-548d-81d8-ef3c574e8b05",
+        "postDate": "1421686800",
+        "title": "Detailed Design",
+        "details": "The close date of the assignment has passed. You can no longer submit an answer.",
+        "lastUpdate": "1423501791.79475",
+        "id": 3436
+      }
+    ],
+    "announcements": [
+      {
+        "author": "Menagarishvili, Olga",
+        "uuid": "adddf50d-18be-434b-a769-132594cbb6f3",
+        "postDate": "1423348927",
+        "title": "Sprint 1 Meetings Schedule",
+        "details": "\u0026nbsp;Here is the schedule for Sprint 1 meetings:\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nM 2\/9: Teams 58, 59\u003Cbr\/\u003E\r\nW 2\/11: Teams 60, 61\u003Cbr\/\u003E\r\nF 2\/13: Teams 62, 80\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nM 2\/16: Teams 81, 82\u003Cbr\/\u003E\r\nW 2\/18: Teams 84, 86\u003Cbr\/\u003E\r\nF 2\/20: Teams 88, 56\u003Cbr\/\u003E\r\n\u003Cbr\/\u003E\r\nF 2\/27: Team 85",
+        "lastUpdate": "1423459295.61204",
+        "id": 7896
+      }
+    ],
+    "id": 74
+  }
+]
