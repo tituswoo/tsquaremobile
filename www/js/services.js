@@ -7,10 +7,16 @@ angular.module('starter.services', []);
 angular.module('starter.services').factory('TSquare', ['$http', function ($http) {
 
     var factory = {};
-    var tsquared = {};
+    var data = [];
+
+    (function () {
+        $http.get('js/dsquared.json').success(function(raw_data) {
+            data = raw_data;
+        });
+    })();
 
     factory.getRawData = function () {
-        return $http.get('js/dsquared.json');
+        return data;
     };
 
     // eventually we'll make better getters and setters for things.

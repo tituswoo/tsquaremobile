@@ -32,16 +32,12 @@ angular.module('starter.controllers', ['starter.services'])
         };
     })
     .controller('AnnouncementsCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
-        TSquare.getRawData().success(function (data) {
-            $scope.announcements = data[0].announcements;
-        });
+        $scope.announcements = TSquare.getRawData()[0].announcements;
     }])
     .controller('ClassesCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
         $scope.classes = [];
 
-        TSquare.getRawData().success(function (data) {
-            data.map(function (item) {
-               $scope.classes.push(item);
-            });
+        TSquare.getRawData().map(function (item) {
+            $scope.classes.push(item);
         });
     }]);
