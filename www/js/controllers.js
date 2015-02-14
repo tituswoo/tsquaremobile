@@ -32,16 +32,13 @@ angular.module('starter.controllers', ['starter.services'])
         };
     })
     .controller('AnnouncementsCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
-        TSquare.getRawData().success(function (data) {
-            $scope.announcements = data[0].announcements;
-        });
+        $scope.announcements = TSquare.announcements;
+        $scope.orderPredicate = '-lastUpdate';
+    }])
+    .controller('AnnouncementCtrl', ['$scope', '$stateParams','TSquare', function ($scope, $stateParams, TSquare) {
+        //$scope.announcement = TSquare.getAnnouncement($stateParams.id);
+        $scope.announcement = TSquare.getAnnouncement(0);
     }])
     .controller('ClassesCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
-        $scope.classes = [];
-
-        TSquare.getRawData().success(function (data) {
-            data.map(function (item) {
-               $scope.classes.push(item);
-            });
-        });
+        $scope.classes = TSquare.classes;
     }]);

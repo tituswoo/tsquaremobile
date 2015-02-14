@@ -7,14 +7,31 @@ angular.module('starter.services', []);
 angular.module('starter.services').factory('TSquare', ['$http', function ($http) {
 
     var factory = {};
-    var tsquared = {};
+    var classes = [];
 
-    factory.getRawData = function () {
-        return $http.get('js/dsquared.json');
+    $http.get('js/dsquared.json').success(function (data) {
+        data.map(function (item) {
+            classes.push(item);
+        });
+    });
+
+    var allAnnouncements = [];
+    $http.get('js/dsquared.json').success(function (data) {
+        data.map(function (item) {
+            var announcements = item.announcements;
+            for (var j = 0; j < announcements.length; j++) {
+                var announceData = announcements[j];
+                announceData["classTitle"] = item.title;
+                allAnnouncements.push(announcements[j]);
+            }
+        });
+    });
+
+    return {
+        classes : classes,
+        announcements : allAnnouncements,
+        getAnnouncement: function(index) {
+            return allAnnouncements[index];
+        }
     };
-
-    // eventually we'll make better getters and setters for things.
-    // right now just return everything...
-
-    return factory;
 }]);
