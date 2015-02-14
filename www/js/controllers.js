@@ -31,25 +31,19 @@ angular.module('starter.controllers', ['starter.services'])
             }, 1000);
         };
     })
-    .controller('AnnouncementsCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
-
-        // TODO: debug
-        console.log("before getAnnouncements");
-
-        $scope.announcements = TSquare.getAnnouncements();
-
-        // TODO: debug
-        console.log("after getAnnouncements");
+    .controller('AnnouncementsCtrl', ['$scope', '$stateParams', 'TSquare', function ($scope, $stateParams, TSquare) {
+        // just as a test
+        TSquare.getAnnouncements($stateParams.uuid).then(function (data) {
+            $scope.announcements = data;
+        }).catch(function (err) {
+            console.log(err);
+        });
 
     }])
     .controller('ClassesCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
-
-        // TODO: debug
-        console.log("before getClasses");
-
-        $scope.classes = TSquare.getClasses();
-
-        // TODO: debug
-        console.log("after getClasses");
-
+        TSquare.getClasses().then(function (data) {
+            $scope.classes= data;
+        }).catch(function (err) {
+            console.log(err);
+        });
     }]);

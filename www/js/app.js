@@ -59,7 +59,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
             })
 
             .state('app.announcements', {
-                url: "/announcements",
+                url: "/announcements/:uuid",
                 views: {
                     'menuContent': {
                         templateUrl: "templates/announcements.html",
