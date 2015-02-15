@@ -1,11 +1,11 @@
-<ion-view title="Class XYZ">
+<ion-view title="{{class.title}}">
     <ion-nav-buttons side="left">
         <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
     </ion-nav-buttons>
     <ion-content class="has-header" padding="true">
         <ion-list>
             <ion-item class="item item-icon-right">Syllabus<i class="icon ion-ios7-arrow-right"></i></ion-item>
-            <ion-item class="item item-icon-right">Announcements<i class="icon ion-ios7-arrow-right"></i></ion-item>
+            <ion-item ui-sref="app.announcements({uuid: class.uuid})" class="item item-icon-right">Announcements<i class="icon ion-ios7-arrow-right"></i></ion-item>
             <ion-item class="item item-icon-right">Resources<i class="icon ion-ios7-arrow-right"></i></ion-item>
             <ion-item class="item item-icon-right">Assignments<i class="icon ion-ios7-arrow-right"></i></ion-item>
             <ion-item class="item item-icon-right">Gradebook<i class="icon ion-ios7-arrow-right"></i></ion-item>
