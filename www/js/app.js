@@ -50,10 +50,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
             })
 
             .state('app.class', {
-                url: "/class",
+                url: "/class/:uuid",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/class.html"
+                        templateUrl: "templates/class.html",
+                        controller: "ClassCtrl"
                     }
                 }
             })

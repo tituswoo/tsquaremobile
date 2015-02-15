@@ -4,7 +4,7 @@
     </ion-nav-buttons>
     <ion-content class="has-header" padding="true">
         <ion-list>
-            <ion-item ui-sref="app.class" class="item" ng-repeat="class in classes">{{ class.title }}<span class="badge badge-assertive">1</span></ion-item>
+            <ion-item ui-sref="app.class({uuid: class.uuid})" class="item" ng-repeat="class in classes">{{ class.title }}<span class="badge badge-assertive">1</span></ion-item>
         </ion-list>
     </ion-content>
 </ion-view>

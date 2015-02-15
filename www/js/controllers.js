@@ -46,4 +46,8 @@ angular.module('starter.controllers', ['starter.services'])
         }).catch(function (err) {
             console.log(err);
         });
+    }])
+    .controller('ClassCtrl', ['$scope', '$stateParams', 'TSquare', function ($scope, $stateParams, TSquare) {
+        var uuid = $stateParams.uuid;
+        console.log(uuid);
     }]);
