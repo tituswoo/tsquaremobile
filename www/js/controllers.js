@@ -37,7 +37,7 @@ angular.module('starter.controllers', ['starter.services'])
     }])
     .controller('AnnouncementCtrl', ['$scope', '$stateParams','TSquare', function ($scope, $stateParams, TSquare) {
         //$scope.announcement = TSquare.getAnnouncement($stateParams.id);
-        $scope.announcement = TSquare.getAnnouncement(0);
+        $scope.announcement = TSquare.getAnnouncement($stateParams.uuid);
     }])
     .controller('ClassesCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
         $scope.classes = TSquare.classes;

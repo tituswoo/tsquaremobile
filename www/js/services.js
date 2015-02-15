@@ -30,8 +30,14 @@ angular.module('starter.services').factory('TSquare', ['$http', function ($http)
     return {
         classes : classes,
         announcements : allAnnouncements,
-        getAnnouncement: function(index) {
-            return allAnnouncements[index];
+        getAnnouncement: function(uuid) {
+            var announcement = [];
+            allAnnouncements.map(function (a) {
+                if (a.uuid == uuid) {
+                    announcement = a;
+                }
+            })
+            return announcement;
         }
     };
 }]);
