@@ -42,6 +42,26 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
         });
     };
 
+    factory.getClass = function (uuid) {
+        var deferred = $q.defer();
+
+        factory.getRawData().then(retrieve);
+
+        function retrieve(data) {
+            if (uuid != undefined) {
+                data.map(function (c) {
+                    if (c.uuid === uuid) {
+                        deferred.resolve(c);
+                    }
+                });
+            } else {
+                // @todo: error?
+            }
+        }
+
+        return deferred.promise;
+    };
+
     factory.getAnnouncements = function (uuid) {
         var deferred = $q.defer();
 
