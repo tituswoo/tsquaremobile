@@ -5,4 +5,6 @@ node_modules/
 platforms/
 plugins/
 .idea/
-www/lib
+www/lib/
+.DS_Store
+hooks/
