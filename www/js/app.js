@@ -30,6 +30,36 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                 controller: 'AppCtrl'
             })
 
+            .state('app.announcement', {
+                url: "/announcement/:uuid",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/announcement.html",
+                        controller: 'AnnouncementCtrl'
+                    }
+                }
+            })
+
+            .state('app.announcements', {
+                url: "/announcements/:uuid",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/announcements.html",
+                        controller: 'AnnouncementsCtrl'
+                    }
+                }
+            })
+
+            .state('app.allAnnouncements', {
+                url: "/allAnnouncements",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/announcements.html",
+                        controller: 'AnnouncementsCtrl'
+                    }
+                }
+            })
+
             .state('app.dashboard', {
                 url: "/dashboard",
                 views: {
@@ -55,16 +85,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                     'menuContent': {
                         templateUrl: "templates/class.html",
                         controller: "ClassCtrl"
-                    }
-                }
-            })
-
-            .state('app.announcements', {
-                url: "/announcements/:uuid",
-                views: {
-                    'menuContent': {
-                        templateUrl: "templates/announcements.html",
-                        controller: 'AnnouncementsCtrl'
                     }
                 }
             })

@@ -4,8 +4,12 @@
     </ion-nav-buttons>
     <ion-content class="has-header" padding="true">
         <ion-list>
-            <div class="item item-divider">Dale's Class</div>
-            <ion-item ng-repeat="a in announcements">{{ a.title }}</ion-item>
+            <div class="item item-divider">Recent Announcements</div>
+
+            <ion-item ui-sref="app.announcement({uuid: a.uuid})" class="item item-icon-right" ng-repeat="a in announcements | orderBy:orderPredicate">
+                [{{a.classTitle}}] {{ a.title }}<i class="icon ion-ios7-arrow-right"></i>
+            </ion-item>
+
         </ion-list>
     </ion-content>
 </ion-view>

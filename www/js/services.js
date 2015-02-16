@@ -61,6 +61,45 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
 
         return deferred.promise;
     };
+    /*
+    factory.getAllAnnouncements = function() {
+        var allAnnouncements = [];
+
+        return $q(function (resolve, reject) {
+            factory.getRawData().then(function (data) {
+                data.map(function (item) {
+                    var announcements = item.announcements;
+                    for (var j = 0; j < announcements.length; j++) {
+                        var announceData = announcements[j];
+                        announceData["classTitle"] = item.title;
+                        allAnnouncements.push(announcements[j]);
+                    }
+                });
+                resolve(data);
+            }).catch(function (data, status) {
+                reject(status);
+            });
+        });
+    }
+    */
+
+    factory.getSpecificAnnouncement = function(uuid) {
+        var announcement = [];
+
+        return $q(function (resolve, reject) {
+            factory.getAnnouncements().then(function (data) {
+
+                data.map(function (a) {
+                    if (a.uuid == uuid) {
+                        announcement = a;
+                    }
+                });
+                resolve(announcement);
+            }).catch(function (data, status) {
+                reject(status);
+            });
+        });
+    }
 
     factory.getAnnouncements = function (uuid) {
         var deferred = $q.defer();
@@ -73,11 +112,25 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                 data.map(function (c) {
                     if (c.uuid === uuid) {
                         announcements = c.announcements;
+                        for (var j = 0; j < announcements.length; j++) {
+                            var announceData = announcements[j];
+                            announceData["classTitle"] = c.title;
+                        }
                         deferred.resolve(announcements);
                     }
                 });
             } else {
-                // @todo: return all announcements
+                // return all announcements
+                var allAnnouncements = [];
+                data.map(function (item) {
+                    var announcements = item.announcements;
+                    for (var j = 0; j < announcements.length; j++) {
+                        var announceData = announcements[j];
+                        announceData["classTitle"] = item.title;
+                        allAnnouncements.push(announcements[j]);
+                    }
+                });
+                deferred.resolve(allAnnouncements);
             }
         }
 

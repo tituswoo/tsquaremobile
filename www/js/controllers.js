@@ -35,10 +35,18 @@ angular.module('starter.controllers', ['starter.services'])
         // just as a test
         TSquare.getAnnouncements($stateParams.uuid).then(function (data) {
             $scope.announcements = data;
+            $scope.orderPredicate = '-lastUpdate';
         }).catch(function (err) {
             console.log(err);
         });
 
+    }])
+    .controller('AnnouncementCtrl', ['$scope', '$stateParams','TSquare', function ($scope, $stateParams, TSquare) {
+        TSquare.getSpecificAnnouncement($stateParams.uuid).then(function (data) {
+            $scope.announcement = data;
+        }).catch(function (err) {
+            console.log(err);
+        });
     }])
     .controller('ClassesCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
         TSquare.getClasses().then(function (data) {
