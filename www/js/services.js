@@ -61,34 +61,12 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
 
         return deferred.promise;
     };
-    /*
-    factory.getAllAnnouncements = function() {
-        var allAnnouncements = [];
-
-        return $q(function (resolve, reject) {
-            factory.getRawData().then(function (data) {
-                data.map(function (item) {
-                    var announcements = item.announcements;
-                    for (var j = 0; j < announcements.length; j++) {
-                        var announceData = announcements[j];
-                        announceData["classTitle"] = item.title;
-                        allAnnouncements.push(announcements[j]);
-                    }
-                });
-                resolve(data);
-            }).catch(function (data, status) {
-                reject(status);
-            });
-        });
-    }
-    */
 
     factory.getSpecificAnnouncement = function(uuid) {
         var announcement = [];
 
         return $q(function (resolve, reject) {
             factory.getAnnouncements().then(function (data) {
-
                 data.map(function (a) {
                     if (a.uuid == uuid) {
                         announcement = a;
@@ -99,7 +77,7 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                 reject(status);
             });
         });
-    }
+    };
 
     factory.getAnnouncements = function (uuid) {
         var deferred = $q.defer();
@@ -133,40 +111,64 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                 deferred.resolve(allAnnouncements);
             }
         }
+        return deferred.promise;
+    };
+
+    factory.getSpecificAssignment = function(uuid) {
+
+        var assignment = [];
+        return $q(function (resolve, reject) {
+            factory.getAssignments().then(function (data) {
+                data.map(function (a) {
+                    if (a.uuid == uuid) {
+                        assignment = a;
+                    }
+                });
+                resolve(assignment);
+
+            }).catch(function (data, status) {
+                reject(status);
+            });
+        });
+    };
+
+    factory.getAssignments = function (uuid) {
+        var deferred = $q.defer();
+
+        factory.getRawData().then(retrieve);
+
+        function retrieve(data) {
+            if (uuid != undefined) {
+                var assignments = [];
+                data.map(function (c) {
+                    if (c.uuid === uuid) {
+                        assignments = c.assignments;
+                        for (var j = 0; j < assignments.length; j++) {
+                            var assignData = assignments[j];
+                            assignData["classTitle"] = c.title;
+                            assignData["relativeDueDate"] = moment.unix(assignData.dueDate).fromNow();
+                        }
+                        deferred.resolve(assignments);
+                    }
+                });
+            } else {
+                // return all assignments
+                var allAssignments = [];
+                data.map(function (item) {
+                    var assignments = item.assignments;
+                    for (var j = 0; j < assignments.length; j++) {
+                        var assignData = assignments[j];
+                        assignData["classTitle"] = item.title;
+                        assignData["relativeDueDate"] = moment.unix(assignData.dueDate).fromNow();
+                        allAssignments.push(assignments[j]);
+                    }
+                });
+                deferred.resolve(allAssignments)
+            }
+        }
 
         return deferred.promise;
 
-        /*var uuid = arguments[0];
-         var announcements = [];
-
-         // return all announcements regardless of class
-         if (uuid === undefined) {
-         data.forEach(function (element) {
-         announcements = announcements.concat(element.announcements);
-         })
-         }
-
-         // return all announcements for the class with passed-in uuid
-         else {
-         // search for the class with passed-in uuid
-         var class_with_uuid = data.filter(function (element) {
-         return element.uuid === uuid;
-         });
-
-         if (class_with_uuid.length === 1) {
-         announcements = class_with_uuid[0].announcements;
-         }
-         else {
-         console.log('oops, two classes with same uuid?');
-         }
-         }
-
-         return announcements;
-         };
-
-         // eventually we'll make better getters and setters for things.
-         // right now just return everything...
-         */
     };
 
     return factory;

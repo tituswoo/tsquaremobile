@@ -60,6 +60,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                 }
             })
 
+            .state('app.assignment', {
+                url: "/assignment/:uuid",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/assignment.html",
+                        controller: 'AssignmentCtrl'
+                    }
+                }
+            })
+
+            .state('app.assignments', {
+                url: "/assignments/:uuid",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/assignments.html",
+                        controller: 'AssignmentsCtrl'
+                    }
+                }
+            })
+
             .state('app.dashboard', {
                 url: "/dashboard",
                 views: {

@@ -31,8 +31,15 @@ angular.module('starter.controllers', ['starter.services'])
             }, 1000);
         };
     })
+    .controller('AnnouncementCtrl', ['$scope', '$stateParams','TSquare', function ($scope, $stateParams, TSquare) {
+        TSquare.getSpecificAnnouncement($stateParams.uuid).then(function (data) {
+            $scope.announcement = data;
+            $scope.postDate = moment.unix($scope.announcement.postDate).format("MM/DD/YYYY");
+        }).catch(function (err) {
+            console.log(err);
+        });
+    }])
     .controller('AnnouncementsCtrl', ['$scope', '$stateParams', 'TSquare', function ($scope, $stateParams, TSquare) {
-        // just as a test
         TSquare.getAnnouncements($stateParams.uuid).then(function (data) {
             $scope.announcements = data;
             $scope.orderPredicate = '-lastUpdate';
@@ -41,12 +48,22 @@ angular.module('starter.controllers', ['starter.services'])
         });
 
     }])
-    .controller('AnnouncementCtrl', ['$scope', '$stateParams','TSquare', function ($scope, $stateParams, TSquare) {
-        TSquare.getSpecificAnnouncement($stateParams.uuid).then(function (data) {
-            $scope.announcement = data;
+    .controller('AssignmentCtrl', ['$scope', '$stateParams','TSquare', function ($scope, $stateParams, TSquare) {
+        TSquare.getSpecificAssignment($stateParams.uuid).then(function (data) {
+            $scope.assignment = data;
+            $scope.dueDate = moment.unix($scope.assignment.dueDate).format("MM/DD/YYYY");
         }).catch(function (err) {
             console.log(err);
         });
+    }])
+    .controller('AssignmentsCtrl', ['$scope', '$stateParams', 'TSquare', function ($scope, $stateParams, TSquare) {
+        TSquare.getAssignments($stateParams.uuid).then(function (data) {
+            $scope.assignments = data;
+            $scope.orderPredicate = 'dueDate';
+        }).catch(function (err) {
+            console.log(err);
+        });
+
     }])
     .controller('ClassesCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
         TSquare.getClasses().then(function (data) {
