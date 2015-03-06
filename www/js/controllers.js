@@ -31,13 +31,39 @@ angular.module('starter.controllers', ['starter.services'])
             }, 1000);
         };
     })
-    .controller('AnnouncementCtrl', ['$scope', '$stateParams','TSquare', function ($scope, $stateParams, TSquare) {
+    .controller('AnnouncementCtrl', ['$scope', '$stateParams', '$ionicModal', 'TSquare', function ($scope, $stateParams, $ionicModal, TSquare) {
         TSquare.getSpecificAnnouncement($stateParams.uuid).then(function (data) {
             $scope.announcement = data;
             $scope.postDate = moment.unix($scope.announcement.postDate).format("MM/DD/YYYY");
         }).catch(function (err) {
             console.log(err);
         });
+
+        TSquare.getCourses().then(function (data) {
+            $scope.courses = data;
+        });
+
+        $ionicModal.fromTemplateUrl('templates/addToCalendar.html', {
+            scope: $scope
+        }).then(function (modal) {
+            $scope.modal = modal;
+        });
+
+        $scope.addEvent = function () {
+            $scope.modal.hide();
+        };
+
+        $scope.addToCalendar = function () {
+            console.log($scope.announcement);
+            $scope.event = {
+                title: $scope.announcement.title,
+                details: $scope.announcement.details,
+                date: chrono.parseDate($scope.announcement.details),
+                course: ''
+            };
+            console.log($scope.event.date);
+            $scope.modal.show();
+        };
     }])
     .controller('AnnouncementsCtrl', ['$scope', '$stateParams', 'TSquare', function ($scope, $stateParams, TSquare) {
         TSquare.getAnnouncements($stateParams.uuid).then(function (data) {
@@ -78,4 +104,7 @@ angular.module('starter.controllers', ['starter.services'])
         }).catch(function (err) {
             console.log(err);
         });
+    }])
+    .controller('AddToCalendarCtrl', ['$scope', '$stateParams', '$ionicPopover', 'TSquare', function ($scope, $stateParams, $ionicPopover, TSquare) {
+
     }]);

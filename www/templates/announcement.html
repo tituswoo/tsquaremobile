@@ -3,10 +3,13 @@
     <ion-nav-buttons side="left">
         <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
     </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button ng-click="addToCalendar()" class="button button-positive icon ion-calendar"></button>
+    </ion-nav-buttons>
     <ion-content padding="true">
         <ion-item> Posted: {{postDate}}</ion-item>
         <ion-item> From: {{announcement.author}}</ion-item>
         <ion-item> Subject: {{announcement.title}}</ion-item>
-        <ion-item ng-bind-html="announcement.details"></ion-item>
+        <ion-item ng-bind-html="announcement.details" class="item-text-wrap"></ion-item>
     </ion-content>
 </ion-view>
