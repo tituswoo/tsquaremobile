@@ -53,15 +53,21 @@ angular.module('starter.controllers', ['starter.services'])
             $scope.modal.hide();
         };
 
+        $scope.close = function () {
+            $scope.modal.hide();
+        };
+
         $scope.addToCalendar = function () {
+            var date = chrono.parseDate($scope.announcement.details) || new Date();
+
             console.log($scope.announcement);
             $scope.event = {
                 title: $scope.announcement.title,
                 details: $scope.announcement.details,
-                date: chrono.parseDate($scope.announcement.details),
+                date: date,
                 course: ''
             };
-            console.log($scope.event.date);
+            console.log($scope);
             $scope.modal.show();
         };
     }])

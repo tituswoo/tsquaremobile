@@ -12,13 +12,13 @@
                     <input type="text" ng-model="event.title" placeholder="Event title">
                 </label>
                 <label class="item item-input">
-                    <input type="date"  placeholder="Select Date" ng-bind="event.date" />
+                    <input type="date"  placeholder="Select Date" ng-model="event.date" />
                 </label>
                 <label class="item item-input item-select">
                     <div class="input-label">
                         Class
                     </div>
-                    <select ng-options="courses.title for c in courses"></select>
+                    <select ng-model="event.course" ng-options="course.uuid as course.title for course in courses"></select>
                 </label>
             </div>
             <div class="list">

@@ -93,6 +93,7 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                             var announceData = announcements[j];
                             announceData["classTitle"] = c.title;
                         }
+
                         deferred.resolve(announcements);
                     }
                 });
