@@ -67,7 +67,6 @@ angular.module('starter.controllers', ['starter.services'])
                 date: date,
                 course: ''
             };
-            console.log($scope);
             $scope.modal.show();
         };
     }])
