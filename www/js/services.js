@@ -26,7 +26,6 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
         });
     };
 
-
     factory.getClasses = function () {
         var classes = [];
 
@@ -94,6 +93,7 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                             var announceData = announcements[j];
                             announceData["classTitle"] = c.title;
                         }
+
                         deferred.resolve(announcements);
                     }
                 });
@@ -168,7 +168,21 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
         }
 
         return deferred.promise;
+    };
 
+    factory.getCourses = function () {
+        var classes = [];
+        return $q(function (resolve, reject) {
+            factory.getRawData().then(function (data) {
+                data.map(function (course) {
+                    classes.push({
+                        uuid: course.uuid,
+                        title: course.title
+                    });
+                });
+                resolve(classes);
+            });
+        });
     };
 
     return factory;

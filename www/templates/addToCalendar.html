@@ -1,0 +1,36 @@
+<div class="modal">
+    <ion-header-bar>
+        <h1 class="title">Add to calendar</h1>
+
+        <div class="buttons">
+            <button class="button button-clear" ng-click="close()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <form>
+            <div class="list">
+                <label class="item item-input">
+                    <input type="text" ng-model="event.title" placeholder="Event title">
+                </label>
+                <label class="item item-input">
+                    <input type="date" placeholder="Select Date" ng-model="event.date"/>
+                </label>
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Class
+                    </div>
+                    <select ng-model="event.course"
+                            ng-options="course.uuid as course.title for course in courses"></select>
+                </label>
+                <button class="button button-block button-positive" ng-click="addEvent()">Add</button>
+                <div class="item item-divider">
+                    Original announcement
+                </div>
+                <label class="item">
+                    <div ng-bind-html="event.details" class="item-text-wrap"></div>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</div>
+
