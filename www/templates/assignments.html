@@ -7,7 +7,7 @@
             <div class="item item-divider">Recent Announcements</div>
 
             <ion-item ui-sref="app.assignment({uuid: a.uuid})" class="item item-icon-right" ng-repeat="a in assignments | orderBy:orderPredicate">
-                [{{a.classTitle}}] {{ a.title }}<span class="badge badge-assertive">due {{a.relativeDueDate}}</span>
+                [{{a.classTitle}}] {{ a.title }}<span class="{{a.badgeClass}}">due {{a.relativeDueDate}}</span>
             </ion-item>
 
         </ion-list>

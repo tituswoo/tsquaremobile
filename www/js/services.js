@@ -145,8 +145,10 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                         assignments = c.assignments;
                         for (var j = 0; j < assignments.length; j++) {
                             var assignData = assignments[j];
+                            var dueMoment = moment.unix(assignData.dueDate);
                             assignData["classTitle"] = c.title;
-                            assignData["relativeDueDate"] = moment.unix(assignData.dueDate).fromNow();
+                            assignData["relativeDueDate"] = dueMoment.fromNow();
+                            assignData["daysFromNow"] = dueMoment.diff(moment(), 'days');
                         }
                         deferred.resolve(assignments);
                     }
@@ -158,9 +160,10 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                     var assignments = item.assignments;
                     for (var j = 0; j < assignments.length; j++) {
                         var assignData = assignments[j];
+                        var dueMoment = moment.unix(assignData.dueDate);
                         assignData["classTitle"] = item.title;
-                        assignData["relativeDueDate"] = moment.unix(assignData.dueDate).fromNow();
-                        allAssignments.push(assignments[j]);
+                        assignData["relativeDueDate"] = dueMoment.fromNow();
+                        assignData["daysFromNow"] = dueMoment.diff(moment(), 'days');
                     }
                 });
                 deferred.resolve(allAssignments)
