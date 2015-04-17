@@ -8,3 +8,4 @@ plugins/
 www/lib/
 .DS_Store
 hooks/
+config.xml

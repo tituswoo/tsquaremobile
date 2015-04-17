@@ -1,75 +1,68 @@
 angular.module('starter.controllers', ['starter.services'])
-    .controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
-        // Form data for the login modal
-        $scope.loginData = {};
+    .controller('AppCtrl', function ($scope, $ionicModal, $timeout, TSquare) {
 
-        // Create the login modal that we will use later
-        $ionicModal.fromTemplateUrl('templates/login.html', {
-            scope: $scope
-        }).then(function (modal) {
-            $scope.modal = modal;
-        });
-
-        // Triggered in the login modal to close it
-        $scope.closeLogin = function () {
-            $scope.modal.hide();
-        };
-
-        // Open the login modal
+        // Perform login through Eric's API and store TSquare data
         $scope.login = function () {
-            $scope.modal.show();
-        };
+            var win = window.open('https://tuchanka.nimbus.cip.gatech.edu/ClassTime/public/courses/all?deviceKey=12345', '_blank');
 
-        // Perform the login action when the user submits the login form
-        $scope.doLogin = function () {
-            console.log('Doing login', $scope.loginData);
+            win.executeScript(
+                {code: 'var a=document.querySelector("pre"),interval=setInterval(function(){a.innerHTML&&(clearInterval(interval),localStorage.setItem("TSquareData",a.innerHTML))},300);'});
 
-            // Simulate a login delay. Remove this and replace with your login
-            // code if using a login system
-            $timeout(function () {
-                $scope.closeLogin();
-            }, 1000);
+            // THERE IS A 40-SECOND WINDOW TO LOG IN AND RETRIEVE T-SQUARE DATA
+            var loop = setTimeout(function () {
+                win.executeScript(
+                    {code: 'localStorage.getItem("TSquareData")'},
+                    function (values) {
+                        var data = values[0];
+                        if (data) {
+                            TSquare.setRawData(JSON.parse(data));
+                            win.close();
+                        }
+                    }
+                );
+            }, 40000);
         };
     })
+
     .controller('AnnouncementCtrl', ['$scope', '$stateParams', '$ionicModal', 'TSquare', function ($scope, $stateParams, $ionicModal, TSquare) {
-        TSquare.getSpecificAnnouncement($stateParams.uuid).then(function (data) {
-            $scope.announcement = data;
-            $scope.postDate = moment.unix($scope.announcement.postDate).format("MM/DD/YYYY");
-        }).catch(function (err) {
-            console.log(err);
-        });
+    TSquare.getSpecificAnnouncement($stateParams.uuid).then(function (data) {
+        $scope.announcement = data;
+        $scope.postDate = moment.unix($scope.announcement.postDate).format("MM/DD/YYYY");
+    }).catch(function (err) {
+        console.log(err);
+    });
 
-        TSquare.getCourses().then(function (data) {
-            $scope.courses = data;
-        });
+    TSquare.getCourses().then(function (data) {
+        $scope.courses = data;
+    });
 
-        $ionicModal.fromTemplateUrl('templates/addToCalendar.html', {
-            scope: $scope
-        }).then(function (modal) {
-            $scope.modal = modal;
-        });
+    $ionicModal.fromTemplateUrl('templates/addToCalendar.html', {
+        scope: $scope
+    }).then(function (modal) {
+        $scope.modal = modal;
+    });
 
-        $scope.addEvent = function () {
-            $scope.modal.hide();
+    $scope.addEvent = function () {
+        $scope.modal.hide();
+    };
+
+    $scope.close = function () {
+        $scope.modal.hide();
+    };
+
+    $scope.addToCalendar = function () {
+        var date = chrono.parseDate($scope.announcement.details) || new Date();
+
+        console.log($scope.announcement);
+        $scope.event = {
+            title: $scope.announcement.title,
+            details: $scope.announcement.details,
+            date: date,
+            course: ''
         };
-
-        $scope.close = function () {
-            $scope.modal.hide();
-        };
-
-        $scope.addToCalendar = function () {
-            var date = chrono.parseDate($scope.announcement.details) || new Date();
-
-            console.log($scope.announcement);
-            $scope.event = {
-                title: $scope.announcement.title,
-                details: $scope.announcement.details,
-                date: date,
-                course: ''
-            };
-            $scope.modal.show();
-        };
-    }])
+        $scope.modal.show();
+    };
+}])
     .controller('AnnouncementsCtrl', ['$scope', '$stateParams', 'TSquare', function ($scope, $stateParams, TSquare) {
         TSquare.getAnnouncements($stateParams.uuid).then(function (data) {
             $scope.announcements = data;
@@ -79,7 +72,7 @@ angular.module('starter.controllers', ['starter.services'])
         });
 
     }])
-    .controller('AssignmentCtrl', ['$scope', '$stateParams','TSquare', function ($scope, $stateParams, TSquare) {
+    .controller('AssignmentCtrl', ['$scope', '$stateParams', 'TSquare', function ($scope, $stateParams, TSquare) {
         TSquare.getSpecificAssignment($stateParams.uuid).then(function (data) {
             $scope.assignment = data;
             $scope.dueDate = moment.unix($scope.assignment.dueDate).format("MM/DD/YYYY");
@@ -94,16 +87,13 @@ angular.module('starter.controllers', ['starter.services'])
                 if (daysFromNow >= 7) {
                     item['badgeClass'] = 'badge badge-balanced';
                 }
-                else if (daysFromNow >= 3)
-                {
+                else if (daysFromNow >= 3) {
                     item['badgeClass'] = 'badge badge-energized';
                 }
-                else if (daysFromNow >= 0)
-                {
+                else if (daysFromNow >= 0) {
                     item['badgeClass'] = 'badge badge-assertive';
                 }
-                else
-                {
+                else {
                     item['badgeClass'] = 'badge badge-stable';
                 }
                 return item;
@@ -117,7 +107,7 @@ angular.module('starter.controllers', ['starter.services'])
     }])
     .controller('ClassesCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
         TSquare.getClasses().then(function (data) {
-            $scope.classes= data;
+            $scope.classes = data;
         }).catch(function (err) {
             console.log(err);
         });

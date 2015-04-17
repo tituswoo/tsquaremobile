@@ -9,20 +9,28 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
     var factory = {};
     var data = [];
 
+    factory.setRawData = function(newData) {
+        data = newData;
+    };
+
     factory.getRawData = function () {
         return $q(function (resolve, reject) {
-            if (data.length != 0) {
-                resolve(data);
-            } else {
-                $http.get('js/dsquared.json')
-                    .success(function (d) {
-                        data = d;
-                        resolve(d);
-                    })
-                    .error(function(data, status) {
-                        reject(status);
-                    });
-            }
+            var interval = setInterval(function () {
+                if (data.length != 0) {
+                    clearInterval(interval);
+                    resolve(data);
+                }/* else {
+
+                    $http.get('js/dsquared.json')
+                        .success(function (d) {
+                            data = d;
+                            resolve(d);
+                        })
+                        .error(function(data, status) {
+                            reject(status);
+                        });
+                }*/
+            }, 500);
         });
     };
 
