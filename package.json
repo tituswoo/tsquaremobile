@@ -18,6 +18,7 @@
     "org.apache.cordova.inappbrowser"
   ],
   "cordovaPlatforms": [
-    "ios"
+    "ios",
+    "android"
   ]
 }
