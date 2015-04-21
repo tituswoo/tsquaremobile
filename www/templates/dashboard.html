@@ -4,16 +4,20 @@
     </ion-nav-buttons>
     <ion-content class="has-header" padding="true">
 
-        <h1 ng-show="not_logged_in">You are not logged in</h1>
+        <h1>
+            {{!logged_in ? 'You are not logged in' : !have_pending_assignments ? 'You look great today' : ''}}
+        </h1>
 
-        <ion-list ng-repeat="a_class in data" ng-hide="not_logged_in || a_class.assignments.length === 0">
-            <div class="item item-divider">{{a_class.title}}</div>
+        <ion-list ng-repeat="(title, assignments) in data" ng-show="logged_in && have_pending_assignments">
+            <div class="item item-divider" ng-hide="assignments.length === 0">{{title}}</div>
             <ion-item
+                    ng-repeat="a in assignments | orderBy:orderPredicate"
                     ui-sref="app.assignment({uuid: a.uuid})"
-                    class="item item-icon-right"
-                    ng-hide="a.daysFromNow < 0"
-                    ng-repeat="a in a_class.assignments | orderBy:orderPredicate">
-                {{ a.title }}
+                    class="item item-icon-right" >
+                    {{ a.title }}
+                <span class="{{a.badgeClass}}">
+                    due {{a.relativeDueDate}}
+                </span>
             </ion-item>
         </ion-list>
 

@@ -192,9 +192,44 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                         assignData["daysFromNow"] = dueMoment.diff(moment(), 'days');
                          **/
                     }
+                    allAssignments = allAssignments.concat(assignments);
                 });
                 deferred.resolve(allAssignments)
             }
+        }
+
+        return deferred.promise;
+    };
+
+    factory.getAllPendingAssignments = function () {
+        var deferred = $q.defer();
+
+        factory.getAssignments().then(retrieve);
+
+        function retrieve(data) {
+            var structured_data = {};
+            var have_pending_assignments = false;
+            data.forEach(function (assignment) {
+                if (structured_data.hasOwnProperty(assignment.classTitle)) {
+                    if (assignment.pending) {
+                        structured_data[assignment.classTitle].push(assignment);
+                        have_pending_assignments = true;
+                    }
+                }
+                else
+                {
+                    structured_data[assignment.classTitle] = [];
+                    if (assignment.pending) {
+                        structured_data[assignment.classTitle].push(assignment);
+                        have_pending_assignments = true;
+                    }
+                }
+            });
+
+            deferred.resolve({
+                pending_assignments: structured_data,
+                have_pending_assignments: have_pending_assignments
+            });
         }
 
         return deferred.promise;
