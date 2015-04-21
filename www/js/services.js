@@ -34,6 +34,19 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
         });
     };
 
+    factory.getDebugRawData = function () {
+        return $q(function (resolve, reject) {
+            $http.get('js/dsquared.json')
+                .success(function (d) {
+                    data = d;
+                    resolve(d);
+                })
+                .error(function(data, status) {
+                    reject(status);
+                });
+        });
+    };
+
     factory.getClasses = function () {
         var classes = [];
 
