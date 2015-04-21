@@ -165,11 +165,14 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                     if (c.uuid === uuid) {
                         assignments = c.assignments;
                         for (var j = 0; j < assignments.length; j++) {
+                            assignments[j] = factory.processAssignment(assignments[j], c.title);
+                            /**
                             var assignData = assignments[j];
                             var dueMoment = moment.unix(assignData.dueDate);
                             assignData["classTitle"] = c.title;
                             assignData["relativeDueDate"] = dueMoment.fromNow();
                             assignData["daysFromNow"] = dueMoment.diff(moment(), 'days');
+                             **/
                         }
                         deferred.resolve(assignments);
                     }
@@ -177,14 +180,17 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
             } else {
                 // return all assignments
                 var allAssignments = [];
-                data.map(function (item) {
-                    var assignments = item.assignments;
+                data.map(function (c) {
+                    var assignments = c.assignments;
                     for (var j = 0; j < assignments.length; j++) {
+                        assignments[j] = factory.processAssignment(assignments[j], c.title);
+                        /**
                         var assignData = assignments[j];
                         var dueMoment = moment.unix(assignData.dueDate);
                         assignData["classTitle"] = item.title;
                         assignData["relativeDueDate"] = dueMoment.fromNow();
                         assignData["daysFromNow"] = dueMoment.diff(moment(), 'days');
+                         **/
                     }
                 });
                 deferred.resolve(allAssignments)
@@ -192,6 +198,30 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
         }
 
         return deferred.promise;
+    };
+
+    factory.processAssignment = function (assignData, class_title) {
+        var dueMoment = moment.unix(assignData.dueDate);
+        assignData["classTitle"] = class_title;
+        assignData["relativeDueDate"] = dueMoment.fromNow();
+        var days_from_now = dueMoment.diff(moment(), 'days');
+        assignData["daysFromNow"] = days_from_now;
+        assignData["pending"] = (days_from_now >= 0);
+
+        // Assign badge class
+        var badge_class = 'badge badge-stable';
+        if (days_from_now >= 7) {
+            badge_class = 'badge badge-balanced';
+        }
+        else if (days_from_now >= 3) {
+            badge_class = 'badge badge-energized';
+        }
+        else if (days_from_now >= 0) {
+            badge_class = 'badge badge-assertive';
+        }
+        assignData["badgeClass"] = badge_class;
+
+        return assignData;
     };
 
     factory.getCourses = function () {

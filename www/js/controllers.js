@@ -88,6 +88,7 @@ angular.module('starter.controllers', ['starter.services'])
     }])
     .controller('AssignmentsCtrl', ['$scope', '$stateParams', 'TSquare', function ($scope, $stateParams, TSquare) {
         TSquare.getAssignments($stateParams.uuid).then(function (data) {
+            /**
             data.map(function (item) {
                 var daysFromNow = item.daysFromNow;
                 if (daysFromNow >= 7) {
@@ -104,6 +105,7 @@ angular.module('starter.controllers', ['starter.services'])
                 }
                 return item;
             });
+             **/
             $scope.assignments = data;
             $scope.orderPredicate = 'dueDate';
         }).catch(function (err) {
