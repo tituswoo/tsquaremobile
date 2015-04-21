@@ -2,12 +2,20 @@
     <ion-nav-buttons side="left">
         <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
     </ion-nav-buttons>
-    <ion-content class="has-header" padding="true" ">
-        <h1>Dashboard</h1>
-        <p>This is awesome.</p>
-        <ul>
-            <li ng-repeat="item in playlists">{{item.title}}</li>
-        </ul>
-        <p>{{hello}}</p>
+    <ion-content class="has-header" padding="true">
+
+        <h1 ng-show="not_logged_in">You are not logged in</h1>
+
+        <ion-list ng-repeat="a_class in data" ng-hide="not_logged_in || a_class.assignments.length === 0">
+            <div class="item item-divider">{{a_class.title}}</div>
+            <ion-item
+                    ui-sref="app.assignment({uuid: a.uuid})"
+                    class="item item-icon-right"
+                    ng-hide="a.daysFromNow < 0"
+                    ng-repeat="a in a_class.assignments | orderBy:orderPredicate">
+                {{ a.title }}
+            </ion-item>
+        </ion-list>
+
     </ion-content>
 </ion-view>

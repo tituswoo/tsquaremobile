@@ -84,7 +84,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                 url: "/dashboard",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/dashboard.html"
+                        templateUrl: "templates/dashboard.html",
+                        controller: 'DashboardCtrl'
                     }
                 }
             })

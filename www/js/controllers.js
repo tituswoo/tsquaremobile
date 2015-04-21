@@ -127,4 +127,15 @@ angular.module('starter.controllers', ['starter.services'])
     }])
     .controller('AddToCalendarCtrl', ['$scope', '$stateParams', '$ionicPopover', 'TSquare', function ($scope, $stateParams, $ionicPopover, TSquare) {
 
+    }])
+    .controller('DashboardCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
+        // TODO: change to get real data
+        TSquare.getDebugRawData().then(function (data) {
+            console.log(data);
+
+            $scope.data = data;
+
+            // If the user has valid data?
+            $scope.not_logged_in = ($scope.data.length === 0);
+        });
     }]);
