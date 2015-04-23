@@ -239,7 +239,8 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
         var dueMoment = moment.unix(assignData.dueDate);
         assignData["classTitle"] = class_title;
         assignData["relativeDueDate"] = dueMoment.fromNow();
-        var days_from_now = dueMoment.diff(moment(), 'days');
+        assignData["relativeDueDateMonthOld"] = dueMoment.from("2015-03-24"); // Calculate from a date that is a month old
+        var days_from_now = dueMoment.diff(moment(), 'days')+31;  // Added a month to display some stuff for the demo
         assignData["daysFromNow"] = days_from_now;
         assignData["pending"] = (days_from_now >= 0);
 

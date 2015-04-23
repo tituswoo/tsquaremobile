@@ -4,7 +4,7 @@
     </ion-nav-buttons>
     <ion-content class="has-header" padding="true">
         <ion-list>
-            <div class="item item-divider">Assignments</div>
+            <div class="item item-divider" ng-show="assignments.length > 0">Assignments</div>
 
             <ion-item ui-sref="app.assignment({uuid: a.uuid})" class="item item-icon-right" ng-repeat="a in assignments | orderBy:orderPredicate">
                 [{{a.classTitle}}] {{ a.title }}<span class="{{a.badgeClass}}">due {{a.relativeDueDate}}</span>

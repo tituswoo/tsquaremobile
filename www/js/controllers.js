@@ -72,7 +72,7 @@ angular.module('starter.controllers', ['starter.services'])
     .controller('AnnouncementsCtrl', ['$scope', '$stateParams', 'TSquare', function ($scope, $stateParams, TSquare) {
         TSquare.getAnnouncements($stateParams.uuid).then(function (data) {
             $scope.announcements = data;
-            $scope.orderPredicate = '-lastUpdate';
+            $scope.orderPredicate = '-postDate';
         }).catch(function (err) {
             console.log(err);
         });
@@ -107,7 +107,7 @@ angular.module('starter.controllers', ['starter.services'])
             });
              **/
             $scope.assignments = data;
-            $scope.orderPredicate = 'dueDate';
+            $scope.orderPredicate = '-dueDate';
         }).catch(function (err) {
             console.log(err);
         });
@@ -132,7 +132,7 @@ angular.module('starter.controllers', ['starter.services'])
     }])
     .controller('DashboardCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
         // TODO: change to get real data
-        TSquare.getDebugRawData().then(function (d) {
+        TSquare.getRawData().then(function (d) {
             TSquare.getAllPendingAssignments().then(function (data) {
                 $scope.logged_in = (Object.keys(data.pending_assignments).length !== 0);
                 $scope.have_pending_assignments = data.have_pending_assignments;
