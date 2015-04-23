@@ -131,13 +131,12 @@ angular.module('starter.controllers', ['starter.services'])
 
     }])
     .controller('DashboardCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
-        // TODO: change to get real data
         TSquare.getRawData().then(function (d) {
             TSquare.getAllPendingAssignments().then(function (data) {
                 $scope.logged_in = (Object.keys(data.pending_assignments).length !== 0);
                 $scope.have_pending_assignments = data.have_pending_assignments;
                 $scope.data = data.pending_assignments;
-                $scope.orderPredicate = '-lastUpdate';
+                $scope.orderPredicate = '-dueDate';
             })
         });
     }]);

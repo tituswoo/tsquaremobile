@@ -5,7 +5,7 @@
     </ion-nav-buttons>
     <ion-content padding="true">
         <ion-item> Due Date: {{dueDate}}</ion-item>
-        <ion-item> Subject: {{assignment.title}}</ion-item>
-        <ion-item ng-bind-html="assignment.details"></ion-item>
+        <ion-item class="item-text-wrap"> Subject: {{assignment.title}}</ion-item>
+        <ion-item class="item-text-wrap" ng-bind-html="assignment.details"></ion-item>
     </ion-content>
 </ion-view>

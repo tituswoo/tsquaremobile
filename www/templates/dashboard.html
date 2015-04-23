@@ -5,7 +5,7 @@
     <ion-content class="has-header" padding="true">
         <div class="card" ng-show="!logged_in">
             <div class="item item-divider">
-                Welcome to T-Square Mobile
+                <h2>Welcome to T-Square Mobile</h2>
             </div>
             <div class="item item-text-wrap">
                 See the menu to log in on T-Square Mobile
@@ -19,7 +19,7 @@
                     class="item item-icon-right" >
                     {{ a.title }}
                 <span class="{{a.badgeClass}}">
-                    due {{a.relativeDueDateMonthOld}}
+                    due {{a.relativeDueDate}}
                 </span>
             </ion-item>
         </ion-list>

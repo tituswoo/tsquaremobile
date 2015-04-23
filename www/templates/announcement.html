@@ -9,7 +9,7 @@
     <ion-content padding="true">
         <ion-item> Posted: {{postDate}}</ion-item>
         <ion-item> From: {{announcement.author}}</ion-item>
-        <ion-item> Subject: {{announcement.title}}</ion-item>
-        <ion-item ng-bind-html="announcement.details" class="item-text-wrap"></ion-item>
+        <ion-item class="item-text-wrap"> Subject: {{announcement.title}}</ion-item>
+        <ion-item class="item-text-wrap" ng-bind-html="announcement.details" class="item-text-wrap"></ion-item>
     </ion-content>
 </ion-view>

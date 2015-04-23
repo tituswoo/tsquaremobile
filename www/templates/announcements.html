@@ -7,7 +7,8 @@
             <div class="item item-divider" ng-show="announcements.length > 0">Announcements</div>
 
             <ion-item ui-sref="app.announcement({uuid: a.uuid})" class="item item-icon-right" ng-repeat="a in announcements | orderBy:orderPredicate">
-                [{{a.classTitle}}] {{ a.title }}<i class="icon ion-ios7-arrow-right"></i>
+                {{a.classTitle.length > 0 ? '[' : ''}}{{a.classTitle}}{{a.classTitle.length > 0 ? ']' : ''}}
+                {{ a.title }}<i class="icon ion-ios7-arrow-right"></i>
             </ion-item>
 
         </ion-list>

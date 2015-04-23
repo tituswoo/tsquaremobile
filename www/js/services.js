@@ -112,7 +112,7 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                         announcements = c.announcements;
                         for (var j = 0; j < announcements.length; j++) {
                             var announceData = announcements[j];
-                            announceData["classTitle"] = c.title;
+                            announceData["classTitle"] = "";
                         }
 
                         deferred.resolve(announcements);
@@ -238,9 +238,9 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
     factory.processAssignment = function (assignData, class_title) {
         var dueMoment = moment.unix(assignData.dueDate);
         assignData["classTitle"] = class_title;
-        assignData["relativeDueDate"] = dueMoment.fromNow();
-        assignData["relativeDueDateMonthOld"] = dueMoment.from("2015-03-24"); // Calculate from a date that is a month old
-        var days_from_now = dueMoment.diff(moment(), 'days')+31;  // Added a month to display some stuff for the demo
+        //assignData["relativeDueDate"] = dueMoment.fromNow();
+        assignData["relativeDueDate"] = dueMoment.from("2015-04-10"); // Calculate from a date that is a month old
+        var days_from_now = dueMoment.diff(moment(), 'days')+14; // Added a month to show stuff for the demo
         assignData["daysFromNow"] = days_from_now;
         assignData["pending"] = (days_from_now >= 0);
 
