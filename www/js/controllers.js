@@ -1,13 +1,10 @@
 angular.module('starter.controllers', ['starter.services'])
     .controller('AppCtrl', function ($scope, $ionicModal, $timeout, TSquare) {
-
         // Perform login through Eric's API in InAppBrowser and store TSquare data
         $scope.login = function () {
             var win = window.open('https://tuchanka.nimbus.cip.gatech.edu/ClassTime/public/courses/all?deviceKey=12345', '_blank');
-
             win.executeScript(
                 {code: 'var a=document.querySelector("pre"),interval=setInterval(function(){a.innerHTML&&(clearInterval(interval),localStorage.setItem("TSquareData",a.innerHTML))},300);'});
-
             win.addEventListener("loadstop", function () {
                 win.addEventListener("loadstart", function () {
                     win.addEventListener("loadstop", function () {
@@ -29,36 +26,35 @@ angular.module('starter.controllers', ['starter.services'])
             });
         };
     })
-
     .controller('AnnouncementCtrl', ['$scope', '$stateParams', '$ionicModal', 'TSquare', function ($scope, $stateParams, $ionicModal, TSquare) {
+        // Retrieve specific announcement data
         TSquare.getSpecificAnnouncement($stateParams.uuid).then(function (data) {
             $scope.announcement = data;
             $scope.postDate = moment.unix($scope.announcement.postDate).format("MM/DD/YYYY");
         }).catch(function (err) {
             console.log(err);
         });
-
+        // Retrieve all classes' data
         TSquare.getCourses().then(function (data) {
             $scope.courses = data;
         });
-
+        // Switch scope to the calendar modal
         $ionicModal.fromTemplateUrl('templates/addToCalendar.html', {
             scope: $scope
         }).then(function (modal) {
             $scope.modal = modal;
         });
-
+        // Hide calendar after adding event
         $scope.addEvent = function () {
             $scope.modal.hide();
         };
-
+        // Close the calendar modal
         $scope.close = function () {
             $scope.modal.hide();
         };
-
+        // Open up the calendar modal
         $scope.addToCalendar = function () {
             var date = chrono.parseDate($scope.announcement.details) || new Date();
-
             console.log($scope.announcement);
             $scope.event = {
                 title: $scope.announcement.title,
@@ -88,24 +84,6 @@ angular.module('starter.controllers', ['starter.services'])
     }])
     .controller('AssignmentsCtrl', ['$scope', '$stateParams', 'TSquare', function ($scope, $stateParams, TSquare) {
         TSquare.getAssignments($stateParams.uuid).then(function (data) {
-            /**
-            data.map(function (item) {
-                var daysFromNow = item.daysFromNow;
-                if (daysFromNow >= 7) {
-                    item['badgeClass'] = 'badge badge-balanced';
-                }
-                else if (daysFromNow >= 3) {
-                    item['badgeClass'] = 'badge badge-energized';
-                }
-                else if (daysFromNow >= 0) {
-                    item['badgeClass'] = 'badge badge-assertive';
-                }
-                else {
-                    item['badgeClass'] = 'badge badge-stable';
-                }
-                return item;
-            });
-             **/
             $scope.assignments = data;
             $scope.orderPredicate = '-dueDate';
         }).catch(function (err) {
@@ -128,7 +106,6 @@ angular.module('starter.controllers', ['starter.services'])
         });
     }])
     .controller('AddToCalendarCtrl', ['$scope', '$stateParams', '$ionicPopover', 'TSquare', function ($scope, $stateParams, $ionicPopover, TSquare) {
-
     }])
     .controller('DashboardCtrl', ['$scope', 'TSquare', function ($scope, TSquare) {
         TSquare.getRawData().then(function (d) {

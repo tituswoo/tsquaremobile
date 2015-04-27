@@ -1,7 +1,3 @@
-/**
- * Created by tituswoo on 2/9/15.
- */
-
 angular.module('starter.services', []);
 
 angular.module('starter.services').factory('TSquare', ['$http', '$q', function ($http, $q) {
@@ -9,31 +5,24 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
     var factory = {};
     var data = [];
 
-    factory.setRawData = function(newData) {
+    // After T-Square login, the JSON data is stored using this method
+    factory.setRawData = function (newData) {
         data = newData;
     };
 
+    // A getter method for the stored T-Square data
     factory.getRawData = function () {
         return $q(function (resolve, reject) {
             var interval = setInterval(function () {
                 if (data.length != 0) {
                     clearInterval(interval);
                     resolve(data);
-                }/* else {
-
-                    $http.get('js/dsquared.json')
-                        .success(function (d) {
-                            data = d;
-                            resolve(d);
-                        })
-                        .error(function(data, status) {
-                            reject(status);
-                        });
-                }*/
+                }
             }, 500);
         });
     };
 
+    // A debug method for fetching mock T-Square data
     factory.getDebugRawData = function () {
         return $q(function (resolve, reject) {
             $http.get('js/dsquared.json')
@@ -41,15 +30,15 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                     data = d;
                     resolve(d);
                 })
-                .error(function(data, status) {
+                .error(function (data, status) {
                     reject(status);
                 });
         });
     };
 
+    // A getter method for classes
     factory.getClasses = function () {
         var classes = [];
-
         return $q(function (resolve, reject) {
             factory.getRawData().then(function (data) {
                 data.map(function (c) {
@@ -62,11 +51,10 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
         });
     };
 
+    // A getter method for individual class data
     factory.getClass = function (uuid) {
         var deferred = $q.defer();
-
         factory.getRawData().then(retrieve);
-
         function retrieve(data) {
             if (uuid != undefined) {
                 data.map(function (c) {
@@ -74,17 +62,15 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                         deferred.resolve(c);
                     }
                 });
-            } else {
-                // @todo: error?
             }
         }
 
         return deferred.promise;
     };
 
-    factory.getSpecificAnnouncement = function(uuid) {
+    // A getter method for individual announcement data
+    factory.getSpecificAnnouncement = function (uuid) {
         var announcement = [];
-
         return $q(function (resolve, reject) {
             factory.getAnnouncements().then(function (data) {
                 data.map(function (a) {
@@ -99,13 +85,13 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
         });
     };
 
+    // A getter method for announcements
     factory.getAnnouncements = function (uuid) {
         var deferred = $q.defer();
-
         factory.getRawData().then(retrieve);
-
         function retrieve(data) {
             if (uuid != undefined) {
+                // return announcements from one class
                 var announcements = [];
                 data.map(function (c) {
                     if (c.uuid === uuid) {
@@ -114,12 +100,11 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                             var announceData = announcements[j];
                             announceData["classTitle"] = "";
                         }
-
                         deferred.resolve(announcements);
                     }
                 });
             } else {
-                // return all announcements
+                // return announcements from all classes
                 var allAnnouncements = [];
                 data.map(function (item) {
                     var announcements = item.announcements;
@@ -132,11 +117,12 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                 deferred.resolve(allAnnouncements);
             }
         }
+
         return deferred.promise;
     };
 
-    factory.getSpecificAssignment = function(uuid) {
-
+    // A getter method for individual assignment
+    factory.getSpecificAssignment = function (uuid) {
         var assignment = [];
         return $q(function (resolve, reject) {
             factory.getAssignments().then(function (data) {
@@ -146,18 +132,16 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                     }
                 });
                 resolve(assignment);
-
             }).catch(function (data, status) {
                 reject(status);
             });
         });
     };
 
+    // A getter method for assignments from one class
     factory.getAssignments = function (uuid) {
         var deferred = $q.defer();
-
         factory.getRawData().then(retrieve);
-
         function retrieve(data) {
             if (uuid != undefined) {
                 var assignments = [];
@@ -166,13 +150,6 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                         assignments = c.assignments;
                         for (var j = 0; j < assignments.length; j++) {
                             assignments[j] = factory.processAssignment(assignments[j], c.title);
-                            /**
-                            var assignData = assignments[j];
-                            var dueMoment = moment.unix(assignData.dueDate);
-                            assignData["classTitle"] = c.title;
-                            assignData["relativeDueDate"] = dueMoment.fromNow();
-                            assignData["daysFromNow"] = dueMoment.diff(moment(), 'days');
-                             **/
                         }
                         deferred.resolve(assignments);
                     }
@@ -184,13 +161,6 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                     var assignments = c.assignments;
                     for (var j = 0; j < assignments.length; j++) {
                         assignments[j] = factory.processAssignment(assignments[j], c.title);
-                        /**
-                        var assignData = assignments[j];
-                        var dueMoment = moment.unix(assignData.dueDate);
-                        assignData["classTitle"] = item.title;
-                        assignData["relativeDueDate"] = dueMoment.fromNow();
-                        assignData["daysFromNow"] = dueMoment.diff(moment(), 'days');
-                         **/
                     }
                     allAssignments = allAssignments.concat(assignments);
                 });
@@ -201,11 +171,10 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
         return deferred.promise;
     };
 
+    // A getter method for upcoming assignments
     factory.getAllPendingAssignments = function () {
         var deferred = $q.defer();
-
         factory.getAssignments().then(retrieve);
-
         function retrieve(data) {
             var structured_data = {};
             var have_pending_assignments = false;
@@ -215,9 +184,7 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                         structured_data[assignment.classTitle].push(assignment);
                         have_pending_assignments = true;
                     }
-                }
-                else
-                {
+                } else {
                     structured_data[assignment.classTitle] = [];
                     if (assignment.pending) {
                         structured_data[assignment.classTitle].push(assignment);
@@ -225,7 +192,6 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
                     }
                 }
             });
-
             deferred.resolve({
                 pending_assignments: structured_data,
                 have_pending_assignments: have_pending_assignments
@@ -235,12 +201,12 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
         return deferred.promise;
     };
 
+    // Determines the priority of assignment based on due date
     factory.processAssignment = function (assignData, class_title) {
         var dueMoment = moment.unix(assignData.dueDate);
         assignData["classTitle"] = class_title;
-        //assignData["relativeDueDate"] = dueMoment.fromNow();
-        assignData["relativeDueDate"] = dueMoment.from("2015-04-10"); // Calculate from a date that is a month old
-        var days_from_now = dueMoment.diff(moment(), 'days')+14; // Added a month to show stuff for the demo
+        assignData["relativeDueDate"] = dueMoment.fromNow();
+        var days_from_now = dueMoment.diff(moment(), 'days');
         assignData["daysFromNow"] = days_from_now;
         assignData["pending"] = (days_from_now >= 0);
 
@@ -260,6 +226,7 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
         return assignData;
     };
 
+    // A getter method for classes
     factory.getCourses = function () {
         var classes = [];
         return $q(function (resolve, reject) {
