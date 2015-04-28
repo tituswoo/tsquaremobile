@@ -4,6 +4,8 @@ A hybrid mobile application that brings the best of T-Square to your mobile devi
 
 ## Release Notes
 
+This project is currently in alpha, and more of a proof-of-concept than a production-ready app. We made this for our Junior Design project class at Georgia Tech.
+
 ### Features
 
 **Classes** - quickly view a list of all the classes you're currently taking.
