@@ -96,3 +96,6 @@ $ ionic run <os>
 ```
 
 Where `<os>` should be sustituted with `android`, `ios`, depending on the phone you've plugged into your computer. Please consult the Ionic developer guide for information on all supported platforms.
+
+## User Manual
+For more information about how to use this app, check out our [wiki page](https://github.com/tituswoo/tsquaremobile/wiki).
