@@ -205,8 +205,9 @@ angular.module('starter.services').factory('TSquare', ['$http', '$q', function (
     factory.processAssignment = function (assignData, class_title) {
         var dueMoment = moment.unix(assignData.dueDate);
         assignData["classTitle"] = class_title;
-        assignData["relativeDueDate"] = dueMoment.fromNow();
-        var days_from_now = dueMoment.diff(moment(), 'days');
+        //assignData["relativeDueDate"] = dueMoment.fromNow();
+        assignData["relativeDueDate"] = dueMoment.from("2015-03-27");
+        var days_from_now = dueMoment.diff(moment(), 'days')+31;
         assignData["daysFromNow"] = days_from_now;
         assignData["pending"] = (days_from_now >= 0);
 
