@@ -2,11 +2,29 @@
 
 A hybrid mobile application that brings the best of T-Square to your mobile device of choice. Quickly browse through your announcements and assignments, keep track of what's due with the intelligent dashboard, and effortlessly add any announcement or assignment to your dashboard so you'll never forget.
 
+## Release Notes
+
+### Features
+
+Classes - quickly view a list of all the classes you're currently taking.
+
+Announcements - view all of your T-Square announcements sorted from newest to oldest. Or, tap on `class_name -> announcements` to view announcements specific to a class. Full HTML is supported for announcements, so you won't miss anything.
+
+Assignments - quickly navigate through all pending assignments on the dashboard or assignments screen, or drill down into a class `class_name -> assignments` to view assignments specific to that class. Just like the announcements view, assignments support full HTML.
+
+Dashboard - a summary view of all the assignments for all of your classes, sorted in priority order. Due dates are also color coded (red means due soon, orange means urgent, green means not due for awhile), and the due dates themselves are friendly (e.g., "in 2 days" as opposed to 05/23/2015).
+
+### Known bugs and issues
+
+Theoretically, tsquaremobile should be able to work on any platform supported by the Ionic Framework and Cordova. In practice, however, we've run into compatibility issues with the `InAppBrowser` Cordova extension on platforms other than iOS. While there are workarounds for this issue, we did not have time to implement these changes during the semester.
+
+Additionally, it is not currently not possible to refresh T-Square data without first logging out, then logging back in again. This is due to a restriction with the API that we're using. If the T-Square API is updated to support sessions and adds more robust API endpoints, we could implement so-called "pull to refresh" or other means of refreshing data in the app without logging out first.
+
 ## Installation Instructions
 
 This installation guide is for developers.
 
-First, install [Node.jS](https://nodejs.org/), if you haven't already; it's necessary to build our app.
+First, install [Node.js](https://nodejs.org/), if you haven't already; it's necessary to build our app.
 
 To ensure you have everything installed correctly, open up your terminal and run:
 
