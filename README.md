@@ -10,7 +10,9 @@ First, install [Node.jS](https://nodejs.org/), if you haven't already; it's nece
 
 To ensure you have everything installed correctly, open up your terminal and run:
 
-`$ which node npm`
+```
+$ which node npm
+```
 
 Note: The `$` means this is a terminal command; you should ignore the `$` actually type in `which node npm`.
 
@@ -18,23 +20,31 @@ If the console prints out something, you have installed Node.js and npm successf
 
 Next, install the Ionic CLI. Do so by running this command:
 
-`$ npm install -g cordova ionic`
+```
+$ npm install -g cordova ionic
+```
 
 Confirm that Ionic has installed itself by executing this command"
 
-`$ ionic -v`
+```
+$ ionic -v
+```
 
 As of this writing, the latest Ionic version was `1.3.18`. However, newer versions should work just fine.
 
 If you haven't already, go ahead and clone this repo on your machine. Then in your terminal, change the directory to be inside the `tsquaremobile` git directory. For example, if you cloned the project to your Desktop, you would run:
 
-`$ cd Desktop/tsquaremobile`
+```
+$ cd Desktop/tsquaremobile
+```
 
 ## Debugging in your web browser
 
 Ionic allows you to run your app in your browser. You can then use  your developer tools of choice (I exclusively use the Chrome Developer Tools) to debug your app just like any other web app.
 
-`$ ionic serve`
+```
+$ ionic serve
+```
 
 ---
 
@@ -61,6 +71,8 @@ Note: You will need a Mac and have the iOS SDK installed before this will work. 
 
 Make sure you have your phone plugged into your computer (if you have Android, you may need to enable Developer Mode to before continuing). Then run:
 
-`$ ionic run <os>`
+```
+$ ionic run <os>
+```
 
 Where `<os>` should be sustituted with `android`, `ios`, depending on the phone you've plugged into your computer. Please consult the Ionic developer guide for information on all supported platforms.
