@@ -6,13 +6,13 @@ A hybrid mobile application that brings the best of T-Square to your mobile devi
 
 ### Features
 
-Classes - quickly view a list of all the classes you're currently taking.
+**Classes** - quickly view a list of all the classes you're currently taking.
 
-Announcements - view all of your T-Square announcements sorted from newest to oldest. Or, tap on `class_name -> announcements` to view announcements specific to a class. Full HTML is supported for announcements, so you won't miss anything.
+**Announcements** - view all of your T-Square announcements sorted from newest to oldest. Or, tap on `class_name -> announcements` to view announcements specific to a class. Full HTML is supported for announcements, so you won't miss anything.
 
-Assignments - quickly navigate through all pending assignments on the dashboard or assignments screen, or drill down into a class `class_name -> assignments` to view assignments specific to that class. Just like the announcements view, assignments support full HTML.
+**Assignments** - quickly navigate through all pending assignments on the dashboard or assignments screen, or drill down into a class `class_name -> assignments` to view assignments specific to that class. Just like the announcements view, assignments support full HTML.
 
-Dashboard - a summary view of all the assignments for all of your classes, sorted in priority order. Due dates are also color coded (red means due soon, orange means urgent, green means not due for awhile), and the due dates themselves are friendly (e.g., "in 2 days" as opposed to 05/23/2015).
+**Dashboard** - a summary view of all the assignments for all of your classes, sorted in priority order. Due dates are also color coded (red means due soon, orange means urgent, green means not due for awhile), and the due dates themselves are friendly (e.g., "in 2 days" as opposed to 05/23/2015).
 
 ### Known bugs and issues
 
